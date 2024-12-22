@@ -69,7 +69,7 @@ function Home() {
       </div>
       {/* Events */}
       <section className="mt-40 p-5">
-        <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3 md:grid-cols-3">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
               enganging events
@@ -87,7 +87,14 @@ function Home() {
               </a>
             </button>
           </div>
-
+          <div>
+            <img
+              src={doc_img}
+              alt=""
+              loading="lazy"
+              className="my-5 h-58 w-full object-cover rounded-md"
+            />
+          </div>
           <div className="lg:relative lg:h-58 lg:top-24">
             {" "}
             <img
@@ -97,54 +104,45 @@ function Home() {
               className="my-5 aspect-video object-cover h-auto w-full rounded-md"
             />
           </div>
-
-          <div>
-            <img
-              src={doc_img}
-              alt=""
-              loading="lazy"
-              className="my-5 h-58 w-full object-cover rounded-md"
-            />
-          </div>
         </div>
       </section>
       {/* Resources */}
-      <section className="mt-40 p-5">
-        <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-3 md:grid-cols-3">
+      <section className="mt-40 p-5 lg:p-12">
+        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-8 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
               highlighted resources
             </h3>
             <p className="my-5 text-left text-sm">
-              Mental Health and Saner Ltd is dedicated to promoting mental
-              wellness and providing comprehensive support services for
-              individuals and organizations. We specialize in counseling,
-              therapy, and mental health education, empowering people to lead
-              healthier, more balanced lives.
+              Explore our carefully curated library of resources, including
+              articles, videos and self-help tools. whether you&apos;re looking
+              for coping strategies, informative guides, or inspiring stories,
+              our resource library is here to support your mental health
+              journey.
             </p>
             <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
-              <a href="" className="text-white">
-                See more Events
+              <a href="" className="text-white capitalize">
+                go to resource library
               </a>
             </button>
           </div>
 
-          <div>
+          <div className="h-58">
             {" "}
             <img
               src={child_counsel}
               alt=""
               loading="lazy"
-              className="my-5 h-58 w-full object-cover rounded-md"
+              className="my-5 h-auto w-full object-cover rounded-md"
             />
           </div>
 
-          <div>
+          <div className="h-58">
             <img
               src={therapist_img}
               alt=""
               loading="lazy"
-              className="my-5 h-58 w-full object-cover rounded-md"
+              className="my-5  h-auto w-full object-cover rounded-md"
             />
           </div>
         </div>
