@@ -1,4 +1,5 @@
 import { counsel, child_counsel, doc_img, therapist_img } from "../lib/Images";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 function Home() {
   return (
@@ -67,6 +68,7 @@ function Home() {
           ></iframe>
         </div>
       </div>
+
       {/* Events */}
       <section className="mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-3">
@@ -81,34 +83,41 @@ function Home() {
               therapy, and mental health education, empowering people to lead
               healthier, more balanced lives.
             </p>
-            <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
-              <a href="" className="text-white">
-                See more Events
+            <button className="bg-green-900 my-5  md:hover:bg-blue-900 px-4 py-2">
+              <a
+                href=""
+                className="text-white flex items-center justify-between gap-4"
+              >
+                See more Events{" "}
+                <span>
+                  <FaArrowCircleRight size={20} />
+                </span>
               </a>
             </button>
+          </div>
+          <div className="lg:h-96">
+            {" "}
+            <img
+              src={counsel}
+              alt="Counseling Specialist"
+              loading="lazy"
+              className="my-5 aspect-video object-cover h-full w-full rounded-md"
+            />
           </div>
           <div>
             <img
               src={doc_img}
-              alt=""
+              alt="Doctors Image"
               loading="lazy"
               className="my-5 h-58 w-full object-cover rounded-md"
             />
           </div>
-          <div className="lg:relative lg:h-58 lg:top-24">
-            {" "}
-            <img
-              src={counsel}
-              alt=""
-              loading="lazy"
-              className="my-5 aspect-video object-cover h-auto w-full rounded-md"
-            />
-          </div>
         </div>
       </section>
+
       {/* Resources */}
       <section className="mt-40 p-5 lg:p-12">
-        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-8 lg:grid-cols-3 md:grid-cols-3">
+        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
               highlighted resources
@@ -121,28 +130,33 @@ function Home() {
               journey.
             </p>
             <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
-              <a href="" className="text-white capitalize">
-                go to resource library
+            <a
+                href=""
+                className="text-white flex items-center justify-between gap-4"
+              >
+                Go to resource library
+                <span>
+                  <FaArrowCircleRight size={20} />
+                </span>
               </a>
             </button>
           </div>
 
-          <div className="h-58">
+          <div className="">
             {" "}
             <img
               src={child_counsel}
-              alt=""
+              alt="Image of a Counseling child"
               loading="lazy"
-              className="my-5 h-auto w-full object-cover rounded-md"
+              className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-
-          <div className="h-58">
+          <div>
             <img
               src={therapist_img}
-              alt=""
+              alt="Therapist Image"
               loading="lazy"
-              className="my-5  h-auto w-full object-cover rounded-md"
+              className="my-5 w-full object-cover rounded-md"
             />
           </div>
         </div>
