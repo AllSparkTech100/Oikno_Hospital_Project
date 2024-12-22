@@ -6,7 +6,7 @@ function Home() {
     <>
       {/* Hero */}
       <div
-        className="container-full h-96 bg-[#0A1D25] w-full lg:p-10 p-20"
+        className="container-full h-screen lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-20"
         // style={{
         //   backgroundImage:
         //     "linear-gradient( rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.5)), url('./assets/counsel.jpeg')",
