@@ -38,7 +38,7 @@ function Home() {
             labore veniam, reprehenderit amet numquam!
           </p>
         </div>
-        <div className="h-80 w-80 mt-8 flex-1 overflow-hidden rounded-xl flex object-cover justify-center items-center">
+        <div className="h-80 w-full md:w-80 mt-8 flex-1 overflow-hidden rounded-xl flex object-cover justify-center items-center">
           <iframe
             width="560"
             height="315"
@@ -52,10 +52,29 @@ function Home() {
         </div>
       </div>
 
-<section className="grid mt-40 grid-cols-3">
-<h3 className="text-left capitalize font-bold">enganging Events</h3>
-</section>
+      <section className="mt-40 p-5">
+        <h3 className="text-left capitalize text-3xl font-medium">
+          enganging Events
+        </h3>
 
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3">
+          <div className="my-5">
+            <p className="my-5 text-left text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus cupiditate sequi veritatis debitis in, voluptatibus
+              vitae inventore maxime officiis nam cum eius aliquam
+              exercitationem repudiandae aspernatur facere eos distinctio
+              tempora.
+            </p>
+            <button className="bg-green-900 my-5 px-4 py-2">
+              <a href="" className="text-white">
+                See more Events
+              </a>
+            </button>
+          </div>
+          <img src="" alt="" className="my-5" />
+        </div>
+      </section>
     </>
   );
 }
