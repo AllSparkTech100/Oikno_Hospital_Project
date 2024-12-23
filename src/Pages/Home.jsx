@@ -246,7 +246,7 @@ function Home() {
         </button>
       </div>
 
-      <section>
+      <section className='mt-40'>
         <Feedback />
       </section>
     </>

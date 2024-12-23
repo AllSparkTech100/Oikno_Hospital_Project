@@ -1,23 +1,22 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-
 function Feedback() {
   const Feeds = [
     {
       name: "Family Therapy Client",
       testify:
-        "Our family dynamic has improved so much since working with Alexander Comfort. They helped us resolve long-standing conflicts and improve our communication.",
+        "Our family dynamic has improved so much since working with . They helped us resolve long-standing conflicts and improve our communication.",
     },
     {
       name: "Parent of a teen therapy client",
       testify:
-        "My teenage daughter was initially resistant to therapy, but Alexander Comfort built a trusting bond with her. She’s now more open and emotionally resilient.",
+        "My teenage daughter was initially resistant to therapy, but Mental Health Plus and Saner LTD. built a trusting bond with her. She’s now more open and emotionally resilient.",
     },
     {
       name: "Counseling Therapy Client",
       testify:
-        "Before counseling, I was overwhelmed by stress. Thanks to Alexander Comfort, I’ve learned coping mechanisms that allow me to thrive, even in challenging times.",
+        "Before counseling, I was overwhelmed by stress. Thanks to Mental Health Plus and Saner LTD., I’ve learned coping mechanisms that allow me to thrive, even in challenging times.",
     },
     {
       name: "Individual Therapy Client",
@@ -32,12 +31,12 @@ function Feedback() {
     {
       name: "Career Therapy Client",
       testify:
-        "I came to Alexander Comfort feeling completely lost in my career. Now, I have a clear vision of my goals and the courage to pursue them.",
+        "I came to Mental Health Plus and Saner LTD. feeling completely lost in my career. Now, I have a clear vision of my goals and the courage to pursue them.",
     },
     {
       name: "Parent of a Child Therapy Client",
       testify:
-        "My child loves going to therapy sessions with Alexander Comfort. Their patience and creative methods have helped us manage his tantrums and build his confidence",
+        "My child loves going to therapy sessions with Mental Health Plus and Saner LTD.. Their patience and creative methods have helped us manage his tantrums and build his confidence",
     },
     {
       name: "Couples Therapy Client",
@@ -47,58 +46,60 @@ function Feedback() {
     {
       name: "Client Struggling with Anxiety",
       testify:
-        "Working with Alexander Comfort changed my life. I finally feel heard and understood, and I’ve gained tools to manage my anxiety effectively.",
+        "Working with Mental Health Plus and Saner LTD. changed my life. I finally feel heard and understood, and I’ve gained tools to manage my anxiety effectively.",
     },
   ];
   return (
     <>
-      <Splide
-        options={{
-          perPage: 3,
-          breakpoints: {
-            480: {
-              perPage: 1,
+      <div className="h-96 p-8 bg-slate-900 w-full">
+        <Splide
+          options={{
+            perPage: 3,
+            breakpoints: {
+              480: {
+                perPage: 1,
+              },
+              640: {
+                perPage: 1,
+              },
+              320: {
+                perPage: 1,
+              },
+              360: {
+                perPage: 1,
+              },
+              768: {
+                perPage: 2,
+              },
             },
-            640: {
-              perPage: 1,
-            },
-            320: {
-              perPage: 1,
-            },
-            360: {
-              perPage: 1,
-            },
-            768: {
-              perPage: 2,
-            },
-          },
-          arrows: true,
-          type: "loop",
-          gap: "10px",
-          rewind: true,
-          focus: "center",
-          drag: "free",
-          pagination: false,
-          lazyLoading: "sequential",
-        }}
-      >
-        {Feeds.map((items, index) => {
-          return (
-            <SplideSlide key={index}>
-              <div className="feed-carrier">
-                <div className="card h-100  p-4 border-2 rounded-3 text-center justify-content-center align-items-center">
-                  <div className="card-body">
-                    <p className="card-text">{items.testify}</p>
-                    <h5 className="card-title fw-normal fst-italic">
-                      {items.name}
-                    </h5>
+            arrows: true,
+            type: "loop",
+            gap: "10px",
+            rewind: true,
+            focus: "center",
+            drag: "free",
+            pagination: true,
+            lazyLoading: "sequential",
+          }}
+        >
+          {Feeds.map((items, index) => {
+            return (
+              <SplideSlide key={index}>
+                <div className="h-60 mt-12">
+                  <div className="h-full bg-white rounded-3xl p-4 flex items-center text-center justify-center">
+                    <div className="p-5">
+                      <p className="text-lg">&quot;{items.testify}&quot;</p>
+                      <h5 className="text-black my-5 font-medium italic">
+                        {items.name}
+                      </h5>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SplideSlide>
-          );
-        })}
-      </Splide>
+              </SplideSlide>
+            );
+          })}
+        </Splide>
+      </div>
     </>
   );
 }
