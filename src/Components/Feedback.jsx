@@ -91,7 +91,7 @@ function Feedback() {
               <SplideSlide key={index}>
                 <div className="h-64 mt-12 ">
                   <div className="h-full shadow-inner bg-none  shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center">
-                    <div className="p-5">
+                    <div className="">
                       <p className="text-lg">&quot;{items.testify}&quot;</p>
                       <h5 className="text-white text-xl my-5 font-medium italic">
                         {items.name}
