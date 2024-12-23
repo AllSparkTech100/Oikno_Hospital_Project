@@ -163,31 +163,77 @@ function Home() {
         </div>
       </section>
 
-{/* Collaboration */}
-      <div className="container-full bg-gray-800 mt-14 p-4 text-center flex flex-col gap-6">
-        <h3 className="text-3xl mt-12 bg-red-900 capitalize font-bold">join the conversation</h3>
-        <p className="my-5">
-          connect with us on social media to stay engage and informed about the
-          latest mental health topics, events and resources. follow us for
-          inspiring stories, expert tips and community support . together, we
-          can foster a supportive environment and raise awarness about mental
-          health.Let&apos;s break the stigma join us today!!{" "}
-        </p>
-         <button className="bg-green-900 my-3 mx-auto rounded-lg md:hover:bg-blue-900 px-4 py-2">
-        <a
-          href=""
-          target="_blank"
-          className="text-white flex items-center justify-between gap-4"
-        >
-          Follow Us{" "}
-          <span>
-            <FaFacebook size={20} />
-          </span>{" "}
-        </a>
-      </button>
-      </div>
+      {/* Conversation */}
+      <section className="mt-40 p-5 lg:p-12">
+        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3">
+          <div className="my-5">
+            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+              join the conversation
+            </h3>
+            <p className="my-5 text-left text-sm">
+              connect with us on social media to stay engage and informed about
+              the latest mental health topics, events and resources. follow us
+              for inspiring stories, expert tips and community support .
+              together, we can foster a supportive environment and raise
+              awarness about mental health.Let&apos;s break the stigma join us
+              today!!{" "}
+            </p>
+            <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
+              <a
+                href=""
+                className="text-white flex items-center justify-between gap-4"
+              >
+                Follow Us On{" "}
+                <span>
+                  <FaFacebook size={20} />
+                </span>{" "}
+              </a>
+            </button>
+          </div>
 
-     
+          <div className="">
+            {" "}
+            <img
+              src={child_counsel}
+              alt="Image of a Counseling child"
+              loading="lazy"
+              className="my-5 object-cover h-full w-full rounded-md"
+            />
+          </div>
+          <div>
+            <img
+              src={therapist_img}
+              alt="Therapist Image"
+              loading="lazy"
+              className="my-5 w-full object-cover rounded-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Donation */}
+      <div className="container-full bg-gray-800 items-center justify-center text-white  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
+        <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+          Donate
+        </h3>
+        <p className="my-4">
+          Your generousity can help us continue our mission of empowering
+          individuals and communities through mental health education and
+          support. every contribution , no matter the size, makes a meaningful
+          impact on our programs and outreach efforts. Help us break the stigma
+          and create a healthier future for all. Click below to make a donation
+          today!!!
+        </p>
+        <button className="bg-green-900 mt-2 mx-auto rounded-lg md:hover:bg-blue-900 px-4 py-2">
+          <a
+            href=""
+            target="_blank"
+            className="text-white flex items-center justify-between gap-4"
+          >
+            Donate Now
+          </a>
+        </button>
+      </div>
     </>
   );
 }
