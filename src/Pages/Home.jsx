@@ -1,5 +1,6 @@
 import { counsel, child_counsel, doc_img, therapist_img } from "../lib/Images";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaArrowCircleRight, FaFacebook } from "react-icons/fa";
+import {} from "react-icons/fa";
 
 function Home() {
   return (
@@ -130,7 +131,7 @@ function Home() {
               journey.
             </p>
             <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
-            <a
+              <a
                 href=""
                 className="text-white flex items-center justify-between gap-4"
               >
@@ -162,7 +163,31 @@ function Home() {
         </div>
       </section>
 
-      fT
+{/* Collaboration */}
+      <div className="container-full bg-gray-800 mt-14 p-4 text-center flex flex-col gap-6">
+        <h3 className="text-3xl mt-12 bg-red-900 capitalize font-bold">join the conversation</h3>
+        <p className="my-5">
+          connect with us on social media to stay engage and informed about the
+          latest mental health topics, events and resources. follow us for
+          inspiring stories, expert tips and community support . together, we
+          can foster a supportive environment and raise awarness about mental
+          health.Let&apos;s break the stigma join us today!!{" "}
+        </p>
+         <button className="bg-green-900 my-3 mx-auto rounded-lg md:hover:bg-blue-900 px-4 py-2">
+        <a
+          href=""
+          target="_blank"
+          className="text-white flex items-center justify-between gap-4"
+        >
+          Follow Us{" "}
+          <span>
+            <FaFacebook size={20} />
+          </span>{" "}
+        </a>
+      </button>
+      </div>
+
+     
     </>
   );
 }
