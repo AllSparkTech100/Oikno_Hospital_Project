@@ -104,7 +104,7 @@ function Home() {
               </a>
             </button>
           </div>
-          <div className="lg:h-96">
+          <div className="lg:h-96 order-first lg:order-none md:order-none">
             {" "}
             <img
               src={counsel}
@@ -113,7 +113,7 @@ function Home() {
               className="my-5 aspect-video object-cover h-full w-full rounded-md"
             />
           </div>
-          <div>
+          <div className="hidden lg:block md:block">
             <img
               src={doc_img}
               alt="Doctors Image"
@@ -151,7 +151,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="">
+          <div className="order-first lg:order-none  md:order-none">
             {" "}
             <img
               src={child_counsel}
@@ -160,7 +160,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div>
+          <div className="hidden lg:block md:block">
             <img
               src={therapist_img}
               alt="Therapist Image"
