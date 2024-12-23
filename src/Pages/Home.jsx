@@ -27,7 +27,7 @@ function Home() {
               empowering minds, <br /> enriching lives
             </h4>
             <p className="mt-2 mb-7">
-              Together, we can break the stigma an promote well-being!!
+              Together, we can break the stigma and promote well-being!!
             </p>
           </div>
           <div className="flex flex-row items-center justify-center gap-4">
@@ -83,7 +83,7 @@ function Home() {
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
-              enganging events
+              engaging events
             </h3>
             <p className="my-5 text-left text-sm">
               Mental Health and Saner Ltd is dedicated to promoting mental
@@ -247,9 +247,9 @@ function Home() {
       </div>
 
       <section className="mt-40 lg:mt-72">
-      <h3 className="text-center text-2xl mb-16 font-bold capitalize">
-        what people say about us
-      </h3>
+        <h3 className="text-center text-2xl mb-16 font-bold capitalize">
+          what people say about us
+        </h3>
         <Feedback />
       </section>
     </>
