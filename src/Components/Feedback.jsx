@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 function Feedback() {
   const Feeds = [
@@ -49,6 +50,7 @@ function Feedback() {
         "Working with Mental Health Plus and Saner LTD. changed my life. I finally feel heard and understood, and I’ve gained tools to manage my anxiety effectively.",
     },
   ];
+  <AutoScroll />;
   return (
     <>
       <div className="h-96 p-8 bg-slate-900 w-full">
@@ -73,20 +75,21 @@ function Feedback() {
               },
             },
             arrows: true,
+            autoScroll: true,
             type: "loop",
             gap: "10px",
             rewind: true,
             focus: "center",
             drag: "free",
             pagination: true,
-            
+
             lazyLoading: "sequential",
           }}
         >
           {Feeds.map((items, index) => {
             return (
               <SplideSlide key={index}>
-                <div className="h-60 mt-12 ">
+                <div className="h-64 mt-12 ">
                   <div className="h-full shadow-inner bg-none  shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center">
                     <div className="p-5">
                       <p className="text-lg">&quot;{items.testify}&quot;</p>
