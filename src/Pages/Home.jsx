@@ -1,5 +1,6 @@
 import { counsel, child_counsel, doc_img, therapist_img } from "../lib/Images";
-import { FaArrowCircleRight, FaFacebook } from "react-icons/fa";
+import { FaArrowCircleRight, FaFacebook, FaDonate } from "react-icons/fa";
+
 import {} from "react-icons/fa";
 
 function Home() {
@@ -213,7 +214,7 @@ function Home() {
 
       {/* Donation */}
       <div className="container-full bg-gray-800 items-center justify-center text-white  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
-        <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+        <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium lg:text-4xl">
           Donate
         </h3>
         <p className="my-4">
@@ -224,13 +225,16 @@ function Home() {
           and create a healthier future for all. Click below to make a donation
           today!!!
         </p>
-        <button className="bg-green-900 mt-2 mx-auto rounded-lg md:hover:bg-blue-900 px-4 py-2">
+
+        <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
           <a
             href=""
-            target="_blank"
             className="text-white flex items-center justify-between gap-4"
           >
-            Donate Now
+            Follow Us On{" "}
+            <span>
+              <FaDonate size={20} />
+            </span>{" "}
           </a>
         </button>
       </div>
