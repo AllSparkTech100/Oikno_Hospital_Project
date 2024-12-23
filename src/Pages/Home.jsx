@@ -1,7 +1,14 @@
-import { counsel, child_counsel, doc_img, therapist_img } from "../lib/Images";
+import {
+  counsel,
+  child_counsel,
+  doc_img,
+  therapist_img,
+  converse,
+  convert,
+} from "../lib/Images";
 import { FaArrowCircleRight, FaFacebook, FaDonate } from "react-icons/fa";
 
-import {} from "react-icons/fa";
+import Feedback from "../Components/Feedback";
 
 function Home() {
   return (
@@ -47,9 +54,9 @@ function Home() {
       </div>
 
       {/* Description */}
-      <div className="flex mt-48 bg-gray-800 text-white flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto p-8">
+      <div className="flex mt-48 bg-gray-800 text-white flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
-          <p className="font-normal">
+          <p className="font-normal text-justify">
             Mental Health and Saner Ltd is dedicated to promoting mental
             wellness and providing comprehensive support services for
             individuals and organizations. We specialize in counseling, therapy,
@@ -57,7 +64,7 @@ function Home() {
             more balanced lives.
           </p>
         </div>
-        <div className="h-80 w-full aspect-video bg-red-800 md:w-80 mt-8 flex-1 overflow-hidden rounded-xl">
+        <div className="h-82 w-full aspect-video mb-5 md:w-80 mt-8 flex-1 overflow-hidden">
           <iframe
             width="100%"
             height="315"
@@ -166,8 +173,8 @@ function Home() {
 
       {/* Conversation */}
       <section className="mt-40 p-5 lg:p-12">
-        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3">
-          <div className="my-5 ">
+        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3 ">
+          <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
               join the conversation
             </h3>
@@ -192,21 +199,21 @@ function Home() {
             </button>
           </div>
 
-          <div className="">
+          <div className="h-80 order-first lg:order-none">
             {" "}
             <img
-              src={child_counsel}
-              alt="Image of a Counseling child"
+              src={converse}
+              alt="Image of people discussing"
               loading="lazy"
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div>
+          <div className="h-96 hidden">
             <img
-              src={therapist_img}
-              alt="Therapist Image"
+              src={convert}
+              alt="counselling discussion Image"
               loading="lazy"
-              className="my-5 w-full object-cover rounded-md"
+              className="my-5 w-full h-full object-cover rounded-md"
             />
           </div>
         </div>
@@ -217,7 +224,7 @@ function Home() {
         <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
-        <p className="my-2">
+        <p className="my-2 text-center">
           Your generousity can help us continue our mission of empowering
           individuals and communities through mental health education and
           support. every contribution , no matter the size, makes a meaningful
@@ -238,6 +245,10 @@ function Home() {
           </a>
         </button>
       </div>
+
+      <section>
+        <Feedback />
+      </section>
     </>
   );
 }
