@@ -208,7 +208,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="h-96 hidden">
+          <div className="h-96 hidden lg:block md:block">
             <img
               src={convert}
               alt="counselling discussion Image"
