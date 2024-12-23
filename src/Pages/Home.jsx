@@ -8,7 +8,7 @@ function Home() {
     <>
       {/* Hero */}
       <div
-        className="container-full h-screen lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-20"
+        className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10"
         // style={{
         //   backgroundImage:
         //     "linear-gradient( rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.5)), url('./assets/counsel.jpeg')",
@@ -167,7 +167,7 @@ function Home() {
       {/* Conversation */}
       <section className="mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3">
-          <div className="my-5">
+          <div className="my-5 ">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
               join the conversation
             </h3>
@@ -214,10 +214,10 @@ function Home() {
 
       {/* Donation */}
       <div className="container-full bg-gray-800 items-center justify-center text-white  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
-        <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium lg:text-4xl">
+        <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
-        <p className="my-4">
+        <p className="my-2">
           Your generousity can help us continue our mission of empowering
           individuals and communities through mental health education and
           support. every contribution , no matter the size, makes a meaningful
@@ -231,7 +231,7 @@ function Home() {
             href=""
             className="text-white flex items-center justify-between gap-4"
           >
-            Follow Us On{" "}
+            Donate Now{" "}
             <span>
               <FaDonate size={20} />
             </span>{" "}
