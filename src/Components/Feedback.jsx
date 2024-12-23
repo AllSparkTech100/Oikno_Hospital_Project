@@ -54,7 +54,7 @@ function Feedback() {
       <div className="h-96 p-8 bg-slate-900 w-full">
         <Splide
           options={{
-            perPage: 3,
+            perPage: 2,
             breakpoints: {
               480: {
                 perPage: 1,
@@ -79,17 +79,18 @@ function Feedback() {
             focus: "center",
             drag: "free",
             pagination: true,
+            
             lazyLoading: "sequential",
           }}
         >
           {Feeds.map((items, index) => {
             return (
               <SplideSlide key={index}>
-                <div className="h-60 mt-12">
-                  <div className="h-full bg-white rounded-3xl p-4 flex items-center text-center justify-center">
+                <div className="h-60 mt-12 ">
+                  <div className="h-full shadow-inner bg-none  shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center">
                     <div className="p-5">
                       <p className="text-lg">&quot;{items.testify}&quot;</p>
-                      <h5 className="text-black my-5 font-medium italic">
+                      <h5 className="text-white text-xl my-5 font-medium italic">
                         {items.name}
                       </h5>
                     </div>

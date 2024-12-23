@@ -246,7 +246,10 @@ function Home() {
         </button>
       </div>
 
-      <section className='mt-40'>
+      <section className="mt-40 lg:mt-72">
+      <h3 className="text-center text-2xl mb-16 font-bold capitalize">
+        what people say about us
+      </h3>
         <Feedback />
       </section>
     </>
