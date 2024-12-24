@@ -34,7 +34,7 @@ function Home() {
             <button className="px-4 py-3 lg:w-1/6  w-1/2 bg-white rounded-md">
               <a
                 href="https://"
-                className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-2xl"
+                className="text-black shadow-none focus:outline-none text-sm lg:text-2xl md:text-2xl"
                 target="_blank"
               >
                 Join Our Events
@@ -95,7 +95,7 @@ function Home() {
             <button className="bg-green-900 my-5  md:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
-                className="text-white flex items-center justify-between gap-4"
+                className="text-white capitalize flex items-center justify-between gap-4"
               >
                 See more Events{" "}
                 <span>
@@ -128,7 +128,7 @@ function Home() {
       <section className="mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               highlighted resources
             </h3>
             <p className="my-5 text-left text-sm">
@@ -141,7 +141,7 @@ function Home() {
             <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
-                className="text-white flex items-center justify-between gap-4"
+                className="text-white flex items-center justify-between capitalize gap-4"
               >
                 Go to resource library
                 <span>
@@ -151,7 +151,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="order-first lg:order-none  md:order-none">
+          <div className="order-first lg:order-none md:order-none">
             {" "}
             <img
               src={child_counsel}
@@ -199,7 +199,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="h-80 order-first lg:order-none">
+          <div className="h-80 order-first md:order-none lg:order-none">
             {" "}
             <img
               src={converse}
