@@ -53,7 +53,7 @@ function Feedback() {
   <AutoScroll />;
   return (
     <>
-      <div className="h-96 p-8 bg-slate-900 w-full">
+      <div className="h-96 p-5 lg:p-8 m:p-8 bg-slate-900 w-full">
         <Splide
           options={{
             perPage: 2,
@@ -89,11 +89,17 @@ function Feedback() {
           {Feeds.map((items, index) => {
             return (
               <SplideSlide key={index}>
-                <div className="h-64 mt-12 ">
-                  <div className="h-full shadow-inner bg-none  shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center">
-                    <div className="">
-                      <p className="text-lg">&quot;{items.testify}&quot;</p>
-                      <h5 className="text-white text-xl my-5 font-medium italic">
+                <div className="h-80 mt-5 w-full">
+                  <div className="h-full shadow-inner shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center">
+                    <div className="w-full">
+                      <div className="font-bold relative top-6 -left-32 font-[Coustard] text-6xl">
+                        &ldquo;
+                      </div>
+                      <p className="text-sm">{items.testify}</p>
+                      <div className="font-bold relative top-2 left-32 font-[Coustard] text-6xl">
+                        &rdquo;
+                      </div>
+                      <h5 className="text-white text-xl lg:text-3xl md:text-3xl my-5 font-medium italic">
                         {items.name}
                       </h5>
                     </div>
