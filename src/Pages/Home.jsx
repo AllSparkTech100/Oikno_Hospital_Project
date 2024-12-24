@@ -34,7 +34,7 @@ function Home() {
             <button className="px-4 py-3 lg:w-1/6  w-1/2 bg-white rounded-md">
               <a
                 href="https://"
-                className="text-black shadow-none focus:outline-none text-sm lg:text-2xl md:text-2xl"
+                className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-xl"
                 target="_blank"
               >
                 Join Our Events
@@ -43,7 +43,7 @@ function Home() {
             <button className="px-4 py-3  w-1/2 lg:w-1/6 bg-white rounded-lg">
               <a
                 href="https://"
-                className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-2xl"
+                className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-xl"
                 target="_blank"
               >
                 Learn More
@@ -82,7 +82,7 @@ function Home() {
       <section className="mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-3">
           <div className="my-5">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               engaging events
             </h3>
             <p className="my-5 text-left text-sm">
@@ -175,7 +175,7 @@ function Home() {
       <section className="mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3 ">
           <div className="my-5">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-medium">
+            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               join the conversation
             </h3>
             <p className="my-5 text-left text-sm">
