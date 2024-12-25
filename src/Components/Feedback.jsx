@@ -51,7 +51,7 @@ function Feedback() {
   ];
   return (
     <>
-      <div className="h-auto md:h-80 lg:h-[28rem] pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-slate-900 w-full">
+      <div className="h-auto pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-slate-900 w-full">
         <Splide
           options={{
             perPage: 2,
