@@ -30,14 +30,36 @@ function About() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row place-items-center bg-red-900 w-full mx-auto h-96 mt-40 justify-evenly-center p-5 gap-4">
-        <div className="rounded-lg  p-4 w-full lg:w-1/2 h-48  bg-gray-500">
-          <h3 className="capitalize text-lg">mission</h3>
+      <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-40 justify-evenly-center p-5 gap-4">
+        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
+          <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
+            mission
+          </h3>
+          <p className="mt-4 lg:mt-12 text-white">
+            To inspire a widespread shift towards proactive mental health
+            practices, fostering healthier and sounder lives for all, equipping
+            individuals with the tools to navigate mental health challenges,
+            prevent triggers and cultivate a wholistic wellbeing.
+          </p>
         </div>
-        <div className="rounded-lg  p-4 w-full lg:w-1/2 h-48  bg-gray-500">
-          <h3 className="capitalize text-lg">mission</h3>
+        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
+          <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
+            Vision
+          </h3>
+          <p className="mt-4 lg:mt-12 text-white">
+            To inspire a widespread shift towards proactive mental health
+            practices, fostering healthier and sounder lives for all, equipping
+            individuals with the tools to navigate mental health challenges,
+            prevent triggers and cultivate a wholistic wellbeing.
+          </p>
         </div>
-      </div>
+      </section>
+
+      <section className="mt-40">
+        <div className="h-auto bg-gray-400">
+          bgaiubeub
+        </div>
+      </section>
     </>
   );
 }

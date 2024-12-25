@@ -87,10 +87,6 @@ function Feedback() {
           {Feeds.map((items, index) => {
             return (
               <SplideSlide key={index}>
-                {/* <div className="md:h-64 lg:h-64 h-96 mt-5 w-full">
-                  
-                </div> */}
-
                 <div className="h-full shadow-inner shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center ">
                   <div className="w-full">
                     <div className="font-bold relative top-6 -left-32 font-[Coustard] text-6xl">
