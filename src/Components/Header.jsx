@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
-import { FaSyringe } from "react-icons/fa";
+import { GiBrain } from "react-icons/gi";
 
 function Header() {
   const [isMenu, setIsMenu] = useState(false);
@@ -12,9 +12,9 @@ function Header() {
     <>
       <header className="sticky top-0 z-10 bg-white">
         <div className="max-w-4xl flex justify-between items-center p-4">
-          <h1 className="text-2xl font-bold uppercase flex items-center justify-center gap-2  text-black">
-            <FaSyringe className="text-blue-800" size={35} />
-            Medex
+          <h1 className="text-lg font-bold uppercase flex items-center justify-center gap-2  text-black">
+            <GiBrain className="text-blue-800" size={35} />
+            Mental Health <span className="font-bold text-blue-900">+</span>
           </h1>
           <div>
             <button
