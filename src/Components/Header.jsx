@@ -37,7 +37,7 @@ function Header() {
           </div>
         </div>{" "}
         {isMenu && (
-          <div className="min-h-screen w-full text-white bg-emerald-950 transition-colors ease-linear duration-100">
+          <div className="sm:hidden min-h-screen w-full text-white bg-emerald-950 transition-colors ease-linear duration-100">
             <div className="bg-slate-800 transition-colors ease-linear duration-300 min-h-screen w-80">
               <div className="grid grid-cols-1">
                 <ul className="text-center">

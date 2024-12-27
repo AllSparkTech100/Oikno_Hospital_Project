@@ -1,4 +1,5 @@
 import { dir_img } from "../lib/Images";
+import { FaFacebook } from "react-icons/fa";
 
 function About() {
   return (
@@ -55,15 +56,26 @@ function About() {
       {/* Description of the CEO */}
       <section className="mt-40">
         <div className="container mx-auto p-4 rounded-lg">
-          <div className="h-auto bg-slate-900 rounded-2xl flex flex-col lg:flex-row-reverse gap-3 w-full py-10 px-4 items-center justify-around ">
-            <div className="flex-1 lg:relative lg:w-32">
-              <img
-                src={dir_img}
-                alt="The CEO"
-                className="rounded-lg h-full w-full"
-              />
+          <div className="h-auto relative bg-slate-900 rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
+            {/* CEO img */}
+            <div className="">
+              <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
+                <img
+                  src={dir_img}
+                  alt="The CEO"
+                  className="object-cover h-full w-full"
+                />
+              </div>
+              <div className="flex bg-white rounded-lg mt-5 py-2 px-1 items-center gap-4 justify-center">
+                <div className="flex items-center justify-center rounded-full p-2 bg-green-900">
+                  <FaFacebook size={20} />
+                  
+                </div>
+              </div>
             </div>
-            <div className=" mt-8 flex-1  lg:m-0">
+
+            {/* CEO description */}
+            <div className=" mt-8 flex-1 lg:w-full lg:m-0">
               <div className="text-center">
                 <h3 className="font-bold text-2xl uppercase text-yellow-500">
                   Alexander comfort
@@ -73,7 +85,7 @@ function About() {
                 </div>
               </div>
               <hr />
-              <div className="mt-8 text-white">
+              <div className="mt-8 text-justify text-white">
                 <p className="mt-4">
                   She is a practicing counseling psychologist specializing in
                   Clinical and Mental Health Counseling. With a strong
