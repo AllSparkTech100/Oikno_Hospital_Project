@@ -37,24 +37,26 @@ function Header() {
           </div>
         </div>{" "}
         {isMenu && (
-          <div className="min-h-screen w-full text-white bg-black">
-            {" "}
+          <div className="sm:hidden min-h-screen w-full text-white bg-emerald-950 transition-colors ease-linear duration-100">
+            <div className="bg-slate-800 transition-colors ease-linear duration-300 min-h-screen w-80">
+              <div className="grid grid-cols-1">
+                <ul className="text-center">
+                  <li className="">
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>{" "}
             <nav
               className="lg:hidden md:hidden flex flex-col items-center gap-8 space-x-8 text-xl"
               aria-label="main"
-            >
-              <ul className="mt-12">
-                <li className="my-3">
-                  <a href="/">Home</a>
-                </li>
-                <li>
-                  <a href="/about">About Us</a>
-                </li>
-                <li>
-                  <a href="/contact">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
+            ></nav>
           </div>
         )}
       </header>
