@@ -12,7 +12,7 @@ function Header() {
     <>
       <header className="sticky top-0 z-10 bg-white">
         <div className="max-w-4xl flex justify-between items-center p-4">
-          <h1 className="text-lg font-bold uppercase flex items-center justify-center gap-2  text-black">
+          <h1 className="text-lg font-bold uppercase felx-none flex items-center justify-center gap-2  text-black">
             <GiBrain className="text-blue-800" size={35} />
             Mental Health <span className="font-bold text-blue-900">+</span>
           </h1>
@@ -24,15 +24,14 @@ function Header() {
               {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
             </button>
             <nav
-              className="hidden sm:block mx-auto space-x-8 text-xl"
-              aria-label="main"
-            >
+              className="hidden sm:block mx-auto basis-1/2 sm:text-lg space-x-8 text-xl"
+              aria-label="main">
               {" "}
               <a href="/">Home</a>
               <a href="/about">About Us</a>
               <a href="/contact">Contact Us</a>
               <a href="/event">Events</a>
-              <a href="/resource">Resource Library</a>
+              <a href="/library">Resource Library</a>
             </nav>
           </div>
         </div>{" "}
