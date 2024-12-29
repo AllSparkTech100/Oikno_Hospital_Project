@@ -1,12 +1,11 @@
-import Resources from "./Components/Resources";
+import Resources from "../Components/Resources"
 
 function Library() {
   return (
     <div>
       <Resources />
-      
     </div>
-  );
+  )
 }
 
-export default Library;
+export default Library

@@ -2,6 +2,7 @@ import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import Error from "./Error";
+import Library from "./Library";
 import { Route, Routes } from "react-router-dom";
 
 function Pages() {
@@ -10,6 +11,7 @@ function Pages() {
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
+      <Route path="/library" element={<Library />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );
