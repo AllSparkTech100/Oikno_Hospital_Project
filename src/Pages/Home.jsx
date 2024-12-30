@@ -16,10 +16,7 @@ function Home() {
       {/* Hero */}
       <div
         className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10"
-        // style={{
-        //   backgroundImage:
-        //     "linear-gradient( rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.5)), url('./assets/counsel.jpeg')",
-        // }}
+
       >
         <div className="text-center mt-5 text-white">
           <div className="flex-col justify-center flex gap-8">

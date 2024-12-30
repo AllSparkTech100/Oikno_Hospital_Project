@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
-function Resources (props) {
+function Resources(props) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -43,13 +43,13 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange}  aria-label="basic tabs example" centered>
-          <Tab label="" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
+          <Tab label="Books" {...a11yProps(0)} />
+          <Tab label="Videos" {...a11yProps(1)} />
+          <Tab label="Gallery" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <Resources className='place-items-start' value={value} index={0}>
+      <Resources value={value} index={0}>
         Item One
       </Resources>
       <Resources value={value} index={1}>
