@@ -13,6 +13,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      
       <ContactCard />
     </>
   );
