@@ -14,11 +14,29 @@ function Home() {
   return (
     <>
       {/* Hero */}
-   <div className="bg-heroImg bg-no-repeat bg-cover bg-center">
+      {/* <div className="bg-heroImg bg-no-repeat bg-cover bg-center">
     <div className="w-full h-screen flex items-end bg-blackOverlay">
-fwega
+<div className="">
+  <h1 className="uppercase text-2xl lg:text-7xl text-white"> empowering minds, <br /> enriching lives</h1>
+  <a href="http://" className="bg-green-600 text-white uppercase font-semibold px-6 py-3 rounded-md transition-all inline-block hover:scale-50">Join us</a>
+</div>
     </div>
-   </div>
+   </div> */}
+      <div className="relative h-screen">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+          <div className="relative p-5 container mx-auto my-56">
+            <h1 className="uppercase text-4xl lg:text-7xl font-bold text-white"> empowering minds, <br /> enriching lives</h1>
+            <div className="flex items-center mt-3 gap-5">
+              <button className="bg-green-600 px-6 py-3 rounded-md transition-all inline-block hover:scale-90 ">
+                <a href="http://" className=" text-white uppercase font-semibold ">Join Us</a>
+              </button>
+              <button className="bg-green-600 px-6 py-3 rounded-md transition-all inline-block hover:scale-90 ">
+                <a href="http://" className=" text-white uppercase font-semibold ">Learn More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <div
         className="h-screen bg-heroImg bg-no-repeat bg-cover bg-bottom  w-full lg:p-10 p-10">
         <div className='bg-blackOverlay flex items-center justify-center h-screen w-full'>

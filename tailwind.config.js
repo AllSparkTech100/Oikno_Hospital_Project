@@ -6,7 +6,7 @@ export default {
     extend: {
       backgroundImage: {
         heroImg: "url('/converse.webp')",
-        blackOverlay: "linear-gradient (to bottom, rgb(0,0,0,0) 0%, rgb(0,0,0,0.8) 100%);",
+        blackOverlay: "linear-gradient (rgb(0,0,0,0) 0%, rgb(0,0,0,0.8) 100%);",
       },
     },
   },
