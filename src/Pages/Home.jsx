@@ -14,13 +14,11 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <div className="h-screen w-full bg-cover bg-no-repeat bg-center bg-heroImg">
-        <div className="bg-blackOverlay h-screen w-full">
-          <div className="container mx-auto">
-
-          </div>
-        </div>
-      </div>
+   <div className="bg-heroImg bg-no-repeat bg-cover bg-center">
+    <div className="w-full h-screen flex items-end bg-blackOverlay">
+fwega
+    </div>
+   </div>
       {/* <div
         className="h-screen bg-heroImg bg-no-repeat bg-cover bg-bottom  w-full lg:p-10 p-10">
         <div className='bg-blackOverlay flex items-center justify-center h-screen w-full'>
