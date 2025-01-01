@@ -14,14 +14,7 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      {/* <div className="bg-heroImg bg-no-repeat bg-cover bg-center">
-    <div className="w-full h-screen flex items-end bg-blackOverlay">
-<div className="">
-  <h1 className="uppercase text-2xl lg:text-7xl text-white"> empowering minds, <br /> enriching lives</h1>
-  <a href="http://" className="bg-green-600 text-white uppercase font-semibold px-6 py-3 rounded-md transition-all inline-block hover:scale-50">Join us</a>
-</div>
-    </div>
-   </div> */}
+
       <div className="relative h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 container mx-auto my-56">
@@ -37,43 +30,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div
-        className="h-screen bg-heroImg bg-no-repeat bg-cover bg-bottom  w-full lg:p-10 p-10">
-        <div className='bg-blackOverlay flex items-center justify-center h-screen w-full'>
 
-          <div className=" text-center mt-5 text-white">
-            <div className="flex-col justify-center flex gap-8">
-              <h4 className=" font-bold text-4xl  capitalize">
-                empowering minds, <br /> enriching lives
-              </h4>
-              <p className="mt-2 mb-7">
-                Together, we can break the stigma and promote well-being!!
-              </p>
-            </div>
-            <div className="flex flex-row items-center justify-center gap-4">
-              <button className="px-4 py-3 lg:w-1/6  w-1/2 bg-white rounded-md">
-                <a
-                  href="https://"
-                  className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-xl"
-                  target="_blank"
-                >
-                  Join Our Events
-                </a>
-              </button>
-              <button className="px-4 py-3  w-1/2 lg:w-1/6 bg-white rounded-lg">
-                <a
-                  href="https://"
-                  className="text-black shadow-none focus:outline-none text-sm lg:text-xl md:text-xl"
-                  target="_blank"
-                >
-                  Learn More
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div> */}
 
       {/* Description */}
       <div className="flex mt-48 bg-gray-800 text-white flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">

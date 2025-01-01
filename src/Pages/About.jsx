@@ -1,32 +1,40 @@
 
 import { dir_img } from "../lib/Images";
-import { FaFacebook } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
 
 function About() {
   return (
     <>
-      <div className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10">
-        <div className="text-center mt-5 text-white">
-          <div className="flex-col justify-center flex gap-8">
-            <h4 className=" font-bold text-4xl text-center capitalize">
-              About Mental Health <br />
-              Plus and Saner Limited
-            </h4>
-            <p className="mt-2 mb-7 text-justify md:text-center lg:text-center">
-              Mental Health Plus and Saner Limited is a registered brand with
-              the Nigerian corporate affairs commission with Registration No.:{" "}
-              <span className="text-yellow-300 font-bold italic">7137614</span>{" "}
-              whose mission is to inspire a widespread shift towards proactive
-              mental health practices, equipping individuals with the tools to
-              navigate mental health challenges, preventing triggers and
-              cultivate a holistic well-being. Through a multifaceted approach
-              of webinars, workshops, conferences and personalized sessions
-              ignites a spark of hope and resilience on inividuals dealing with
-              mental health conditions.
-            </p>
+      <div className="relative h-screen">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+          <div className="relative p-5 mx-auto my-40 ">
+
+            <div className="flex-col justify-center items-center flex gap-8 place-items-center">
+              <h4 className=" uppercase text-center text-4xl lg:text-7xl font-bold text-white">
+                About Mental Health <br />
+                Plus and Saner Limited
+              </h4>
+              <p className="mt-2 mb-7 text-white text-justify md:text-center lg:text-center">
+                Mental Health Plus and Saner Limited is a registered brand with
+                the Nigerian corporate affairs commission with Registration No.:{" "}
+                <span className="text-yellow-300 font-bold italic">7137614</span>{" "}
+                whose mission is to inspire a widespread shift towards proactive
+                mental health practices, equipping individuals with the tools to
+                navigate mental health challenges, preventing triggers and
+                cultivate a holistic well-being. Through a multifaceted approach
+                of webinars, workshops, conferences and personalized sessions
+                ignites a spark of hope and resilience on inividuals dealing with
+                mental health conditions.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      {/* <div className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10">
+        <div className="text-center mt-5 text-white">
+
+        </div>
+      </div> */}
 
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-40 justify-evenly-center p-5 gap-4">
@@ -55,9 +63,9 @@ function About() {
       </section>
 
       {/* Description of the CEO */}
-      <section className="mt-40">
-        <div className="container mx-auto p-4 rounded-lg">
-          <div className="h-auto relative bg-slate-900 rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
+      <section className="mt-40 ">
+        <div className="container w-full bg-slate-900 mx-auto p-4 rounded-lg">
+          <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
             <div className="">
               <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
@@ -67,11 +75,11 @@ function About() {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="flex bg-white rounded-lg mt-5 py-2 px-1 items-center gap-4 justify-center">
-                <div className="flex items-center justify-center rounded-full p-2 bg-green-900">
+              <div className="flex bg-white rounded-lg mt-5 py-4 px-1 items-center gap-4 justify-center">
+                {/* <div className="flex items-center justify-center rounded-full p-2 bg-green-900">
                   <FaFacebook size={20} />
 
-                </div>
+                </div> */}
               </div>
             </div>
 
