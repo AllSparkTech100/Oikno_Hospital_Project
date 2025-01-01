@@ -16,13 +16,14 @@ function Header() {
             <GiBrain className="text-blue-800" size={35} />
             Mental Health <span className="font-bold text-blue-900">+</span>
           </h1>
-          <div>
-            <button
+          <button
               onClick={menuToggle}
               className="text-2xl sm:hidden focus:outline-none"
             >
               {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
             </button>
+          <div>
+          
             <nav
               className="hidden sm:block mx-auto basis-1/2 sm:text-lg space-x-8 text-xl"
               aria-label="main">
@@ -30,8 +31,8 @@ function Header() {
               <a href="/">Home</a>
               <a href="/about">About Us</a>
               <a href="/contact">Contact Us</a>
-              <a href="/event">Events</a>
-              <a href="/library">Resource Library</a>
+              <a href="/service">Our Services</a>
+              <a href="/library"> Library</a>
             </nav>
           </div>
         </div>{" "}

@@ -63,7 +63,7 @@ function About() {
       </section>
 
       {/* Description of the CEO */}
-      <section className="mt-40 ">
+      <section className="mt-40">
         <div className="container w-full bg-slate-900 mx-auto p-4 rounded-lg">
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
