@@ -22,13 +22,20 @@ function ContactCard() {
             <form action="">
               <div className="mb-3 flex gap-3 flex-col mt-3">
                 <label htmlFor="fullname">Full Name</label>
-                <input type="text" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-5/6 rounded-md" name="fullname" id="" placeholder="e.g James Richard" required />
+                <input type="text" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="fullname" id="" placeholder="e.g James Richard" required />
 
               </div>
               <div className="mb-3 flex gap-3 flex-col mt-3">
-                <label htmlFor="fullname">Email </label>
-                <input type="email" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-5/6 rounded-md" name="fullname" id="" placeholder="e.g jamesrichard@hotmail.com" required />
-
+                <label htmlFor="email">Email </label>
+                <input type="email" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="fullname" id="" placeholder="e.g jamesrichard@hotmail.com" required />
+              </div>
+              <div className="mb-3 flex gap-3 flex-col mt-3">
+                <label htmlFor="number">Mobile Number </label>
+                <input type="number" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="fullname" id="" placeholder="e.g +234123456788" required />
+              </div>
+              <div className="mb-3 flex gap-3 flex-col mt-3">
+                <label htmlFor="message">Message </label>
+                <textarea className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="" id="" cols="30" rows="10"></textarea>
               </div>
 
             </form>
