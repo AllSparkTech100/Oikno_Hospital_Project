@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
-import { GiBrain } from "react-icons/gi";
+// import { GiBrain } from "react-icons/gi";
 
 function Header() {
   const [isMenu, setIsMenu] = useState(false);
@@ -10,20 +10,19 @@ function Header() {
   };
   return (
     <>
-      <header className="sticky top-0 z-10 bg-white">
+      <header className="sticky top-0 z-10 bg-green-400 text-white">
         <div className="max-w-4xl flex justify-between items-center p-4">
-          <h1 className="text-lg font-bold uppercase felx-none flex items-center justify-center gap-2  text-black">
-            <GiBrain className="text-blue-800" size={35} />
-            Mental Health <span className="font-bold text-blue-900">+</span>
-          </h1>
+
+          <img src="/mhslogo.png" className="p-3 h-12 w-42 " alt="Logo" />
+
           <button
-              onClick={menuToggle}
-              className="text-2xl sm:hidden focus:outline-none"
-            >
-              {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
-            </button>
+            onClick={menuToggle}
+            className="text-2xl sm:hidden focus:outline-none"
+          >
+            {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
+          </button>
           <div>
-          
+
             <nav
               className="hidden sm:block mx-auto basis-1/2 sm:text-lg space-x-8 text-xl"
               aria-label="main">
