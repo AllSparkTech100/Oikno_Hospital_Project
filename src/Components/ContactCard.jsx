@@ -60,8 +60,17 @@ function ContactCard() {
         </div>
       </div>
 
+
       <div className="container mx-auto mt-20 p-5">
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-3">
+        <div className="text-center mx-auto p-3">
+          <h3 className="text-yellow-500 text-lg lg:text-2xl  font-semibold uppercase">
+            get in touch
+          </h3>
+
+          <h4 className="text-2xl lg:text-3xl capitalize">
+            seamless communication, global Impact</h4>
+        </div>
+        <div className="grid grid-cols-1 mt-20 gap-5 lg:grid-cols-3 md:grid-cols-2">
           {/* Address */}
           <div className="bg-gray-700 rounded-md flex  justify-center flex-col h-52 p-5">
             <div className=" text-center text-white">
@@ -71,7 +80,7 @@ function ContactCard() {
             </div>
           </div>
           {/* Email Contact */}
-          <div className="bg-[#a29f9ff0] text-black rounded-md flex justify-center flex-col h-52 p-5">
+          <div className="bg-[#a29f9ff0] lg:col-span-1  md:col-span-2 text-black rounded-md flex justify-center flex-col h-52 p-5">
             <div className=" text-center ">
               <GoMail className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Email Us</h3>
@@ -93,18 +102,18 @@ function ContactCard() {
             </div>
           </div>
           {/* Phone Contact */}
-          <div className="bg-gray-700 rounded-md flex  justify-center flex-col h-52 p-5">
+          <div className="bg-gray-700 lg:col-span-1 md:col-span-3 rounded-md flex  justify-center flex-col h-52 p-5">
             <div className=" text-center text-white">
               <IoCall className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Give us a Call</h3>
-              <p className="mt-3">  <a
+              <p className="mt-3 text-xl lg:text-xl">  <a
                 href="tel:+2348149944531"
                 className=" text-white"
 
               >
                 +234-814-9944-531
               </a></p>
-              <p className="mt-3">  <a
+              <p className="mt-3 text-xl lg:text-xl">  <a
                 href="tel:+2348071277101"
                 className=" text-white"
 
