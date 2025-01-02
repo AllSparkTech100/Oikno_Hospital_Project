@@ -5,3 +5,4 @@ export { default as doc_img } from "../assets/doctor.jpeg";
 export { default as therapist_img } from "../assets/therapist.jpeg";
 export { default as converse } from "../assets/converse.webp";
 export { default as convert } from "../assets/convert.webp";
+export { default as work } from "../assets/work.svg";

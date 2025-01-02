@@ -3,17 +3,20 @@ import ContactCard from "../Components/ContactCard";
 function Contact() {
   return (
     <>
-      <div className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10">
-        <div className="text-center mt-5 text-white">
-          <div className="place-items-center">
-            <h4 className=" font-bold text-4xl lg:text-5xl text-center capitalize">
-             Contact Us
-            </h4>
+    <div className="relative h-screen">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+          <div className="relative p-5 mx-auto my-40 ">
 
+            <div className="flex-col justify-center items-center flex gap-8 place-items-center">
+              <h4 className=" uppercase text-center text-4xl lg:text-7xl font-bold text-white">
+                contact us
+              </h4>
+            
+            </div>
           </div>
         </div>
       </div>
-      
+
       <ContactCard />
     </>
   );

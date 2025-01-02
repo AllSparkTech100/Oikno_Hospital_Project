@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <div className="relative h-screen">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 mx-auto my-40 ">
 
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
@@ -30,11 +30,7 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <div className="container-full h-auto lg:h-96 bg-[#0A1D25] w-full lg:p-10 p-10">
-        <div className="text-center mt-5 text-white">
 
-        </div>
-      </div> */}
 
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-40 justify-evenly-center p-5 gap-4">
