@@ -33,7 +33,7 @@ function Home() {
 
 
       {/* Description */}
-      <div className="flex mt-48 bg-[#7eea00] text-black flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
+      <div className="flex mt-48 bg-[#7eea00] text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
           <p className="font-normal text-justify">
             Mental Health and Saner Ltd is dedicated to promoting mental
@@ -59,7 +59,7 @@ function Home() {
 
       {/* Events */}
       <section className="mt-40 p-5">
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-3">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               engaging events
@@ -91,7 +91,7 @@ function Home() {
               className="my-5 aspect-video object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="hidden lg:block md:block">
+          <div className="hidden lg:block md:hidden">
             <img
               src={doc_img}
               alt="Doctors Image"
@@ -104,7 +104,7 @@ function Home() {
 
       {/* Resources */}
       <section className="mt-40 p-5 lg:p-12">
-        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-3">
+        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               highlighted resources
@@ -129,7 +129,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="order-first lg:order-none md:order-none">
+          <div className="order-first lg:order-none md:order-first">
             {" "}
             <img
               src={child_counsel}
@@ -138,7 +138,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="hidden lg:block md:block">
+          <div className="hidden lg:block md:hidden">
             <img
               src={therapist_img}
               alt="Therapist Image"
@@ -151,7 +151,7 @@ function Home() {
 
       {/* Conversation */}
       <section className="mt-40 p-5 lg:p-12">
-        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-3 ">
+        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               join the conversation
@@ -164,7 +164,7 @@ function Home() {
               awarness about mental health.Let&apos;s break the stigma join us
               today!!{" "}
             </p>
-            <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
+            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
                 className="text-white flex items-center justify-between gap-4"
@@ -186,7 +186,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="h-96 hidden lg:block md:block">
+          <div className="h-96 hidden lg:block md:hidden">
             <img
               src={convert}
               alt="counselling discussion Image"
@@ -202,7 +202,7 @@ function Home() {
         <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
-        <p className="my-2 text-center">
+        <p className="my-2 md:my-1 text-center">
           Your generousity can help us continue our mission of empowering
           individuals and communities through mental health education and
           support. every contribution , no matter the size, makes a meaningful
@@ -211,7 +211,7 @@ function Home() {
           today!!!
         </p>
 
-        <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
+        <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2 md:py-1">
           <a
             href=""
             className="text-white flex items-center justify-between gap-4"
