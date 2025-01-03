@@ -5,14 +5,14 @@ import { dir_img } from "../lib/Images";
 function About() {
   return (
     <>
-      <div className="relative h-screen">
+      <div className="relative h-screen lg:h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 mx-auto my-10 sm:my-40 ">
+          <div className="relative p-5 mx-auto my-20 sm:my-40 ">
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
-              <h4 className=" uppercase text-center text-4xl lg:text-7xl font-bold text-white">
+              <h1 className=" uppercase text-center text-3xl md:text-5xl lg:text-7xl font-bold text-white">
                 About Mental Health <br />
                 Plus and Saner Limited
-              </h4>
+              </h1>
               <p className="mt-2 mb-7 text-white text-justify md:text-center lg:text-center">
                 Mental Health Plus and Saner Limited is a registered brand with
                 the Nigerian corporate affairs commission with Registration No.:
@@ -33,7 +33,7 @@ function About() {
 
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-40 justify-evenly-center p-5 gap-4">
-        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
+        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             mission
           </h3>
@@ -44,16 +44,16 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div className="rounded-lg bg-slate-600 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
+        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Vision
           </h3>
           <p className="mt-4 lg:mt-5 text-white">
            To create a future where mental health is a priority not an after thought.
-           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
+           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 mt-3 underline-offset-4">
             Core Values
           </h3>
-           <ul className="">
+           <ul className="list-disc leading-loose">
             <li>Client centred care</li>
             <li>Psycho eucation/mental health education</li>
             <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
