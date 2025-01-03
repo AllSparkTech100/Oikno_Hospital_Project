@@ -25,7 +25,7 @@ function Videos() {
                                 <Card className='bg-gray-700 '>
                                     <CardActionArea>
                                         <CardMedia>
-                                            <video className='w-full' src={items.video} muted controls type='mp4' ></video>
+                                            <video className='w-full' src={items.video} muted controls preload='' type='mp4' ></video>
                                         </CardMedia>
                                         <div className="p-2">
                                             <CardContent>
