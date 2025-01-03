@@ -16,9 +16,9 @@ function Home() {
       {/* Hero */}
 
       <div className="relative h-96 lg:h-screen">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/panel.jpg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 container mx-auto my-20 lg:my-56">
-            <h1 className="uppercase text-3xl lg:text-7xl font-bold text-white"> empowering minds, <br /> enriching lives</h1>
+            <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white"> mental health, <br />is preserved wealth</h1>
             <div className="flex items-center mt-3 gap-5">
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
                 <a href="http://" className=" text-white uppercase font-semibold ">Join Us</a>
@@ -70,7 +70,7 @@ function Home() {
             individuals with the tools to navigate mental health challenges,
             prevent triggers and cultivate a wholistic wellbeing.
             </p>
-            <button className="bg-green-900 my-5md:hover:bg-blue-900 px-4 py-2">
+            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
                 className="text-white capitalize flex items-center justify-between gap-4"
@@ -88,7 +88,7 @@ function Home() {
               src={counsel}
               alt="Counseling Specialist"
               loading="lazy"
-              className="my-5 aspect-video object-cover h-full w-full rounded-md"
+              className="my-5 lg:my-0 aspect-video object-cover h-full w-full rounded-md"
             />
           </div>
           <div className="hidden lg:block md:hidden">
@@ -96,7 +96,7 @@ function Home() {
               src={doc_img}
               alt="Doctors Image"
               loading="lazy"
-              className="my-5 h-58 w-full object-cover rounded-md"
+              className="my-5 lg:my-0 h-58 w-full object-cover rounded-md"
             />
           </div>
         </div>
@@ -116,7 +116,7 @@ function Home() {
               our resource library is here to support your mental health
               journey.
             </p>
-            <button className="bg-green-900 my-5 md:hover:bg-blue-900 px-4 py-2">
+            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
                 className="text-white flex items-center justify-between capitalize gap-4"

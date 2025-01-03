@@ -44,15 +44,20 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
+        <div className="rounded-lg bg-slate-600 shadow-inner shadow-slate-500 p-9 h-auto lg:h-64 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Vision
           </h3>
-          <p className="mt-4 lg:mt-12 text-white">
-            To inspire a widespread shift towards proactive mental health
-            practices, fostering healthier and sounder lives for all, equipping
-            individuals with the tools to navigate mental health challenges,
-            prevent triggers and cultivate a wholistic wellbeing.
+          <p className="mt-4 lg:mt-5 text-white">
+           To create a future where mental health is a priority not an after thought.
+           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
+            Core Values
+          </h3>
+           <ul className="">
+            <li>Client centred care</li>
+            <li>Psycho eucation/mental health education</li>
+            <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
+           </ul>
           </p>
         </div>
       </section>
