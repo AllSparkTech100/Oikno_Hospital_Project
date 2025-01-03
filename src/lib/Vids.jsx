@@ -1,1 +1,1 @@
-// export { default as abuja } from "/bgvideo.mp4";
+export { default as abuja } from "/bgvideo.mp4";
