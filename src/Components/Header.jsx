@@ -10,20 +10,12 @@ function Header() {
   };
   return (
     <>
-      <header className="sticky top-0 z-10 bg-green-400 text-white">
-        <div className="max-w-4xl flex justify-between items-center p-4">
+      <header className="sticky top-0 z-10 bg-[#02514b] text-white">
+        <div className="max-w-4xl flex justify-between items-center p-4 lg:p-3">
 
           <img href='/' src="/mhslogo.png" className=" h-12 w-42 " alt="Logo" />
 
-
-          <div>
-            <button
-              onClick={menuToggle}
-              className="text-2xl sm:hidden focus:outline-none"
-            >
-              {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
-            </button>
-            <nav
+          <nav
               className="hidden sm:block mx-auto basis-1/2 sm:text-lg space-x-8 text-xl"
               aria-label="main">
               {" "}
@@ -33,6 +25,16 @@ function Header() {
               <a href="/services">Our Services</a>
               <a href="/library"> Library</a>
             </nav>
+            <button className="p-3 rounded-lg  bg-green-500">
+              Book a Session
+            </button>
+          <div className="flex items-center flex-row justify-center">
+            <button
+              onClick={menuToggle}
+              className="text-2xl sm:hidden focus:outline-none"
+            >
+              {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
+            </button>
           </div>
         </div>{" "}
         {isMenu && (

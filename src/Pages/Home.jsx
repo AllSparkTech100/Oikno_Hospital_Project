@@ -15,15 +15,15 @@ function Home() {
     <>
       {/* Hero */}
 
-      <div className="relative h-screen">
+      <div className="relative h-96 lg:h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/convert.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 container mx-auto my-56">
-            <h1 className="uppercase text-4xl lg:text-7xl font-bold text-white"> empowering minds, <br /> enriching lives</h1>
+          <div className="relative p-5 container mx-auto my-20 lg:my-56">
+            <h1 className="uppercase text-3xl lg:text-7xl font-bold text-white"> empowering minds, <br /> enriching lives</h1>
             <div className="flex items-center mt-3 gap-5">
-              <button className="bg-green-600 px-6 py-3 rounded-md transition-all inline-block hover:scale-90 ">
+              <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
                 <a href="http://" className=" text-white uppercase font-semibold ">Join Us</a>
               </button>
-              <button className="bg-green-600 px-6 py-3 rounded-md transition-all inline-block hover:scale-90 ">
+              <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
                 <a href="http://" className=" text-white uppercase font-semibold ">Learn More</a>
               </button>
             </div>
@@ -33,7 +33,7 @@ function Home() {
 
 
       {/* Description */}
-      <div className="flex mt-48 bg-gray-800 text-white flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
+      <div className="flex mt-48 bg-[#7eea00] text-black flex-col lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
           <p className="font-normal text-justify">
             Mental Health and Saner Ltd is dedicated to promoting mental
@@ -225,7 +225,7 @@ function Home() {
       </div>
 
       <section className="mt-40 lg:mt-72">
-        <h3 className="text-center text-2xl mb-16 font-bold capitalize">
+        <h3 className="text-center text-2xl mb-16 font-bold capitalize underline decoration-slate-500">
           what people say about us
         </h3>
         <Feedback />

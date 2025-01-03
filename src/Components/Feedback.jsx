@@ -51,7 +51,7 @@ function Feedback() {
   ];
   return (
     <>
-      <div className="h-auto pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-slate-900 w-full">
+      <div className="h-auto pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-[#02514b] w-full">
         <Splide
           options={{
             perPage: 2,
@@ -87,7 +87,7 @@ function Feedback() {
           {Feeds.map((items, index) => {
             return (
               <SplideSlide key={index}>
-                <div className="h-full shadow-inner shadow-slate-500 text-yellow-500 rounded-3xl p-12 flex items-center text-center justify-center ">
+                <div className="h-full shadow-inner shadow-slate-500 text-white rounded-3xl p-12 flex items-center text-center justify-center ">
                   <div className="w-full">
                     <div className="font-bold relative top-6 -left-32 font-[Coustard] text-6xl">
                       &ldquo;
