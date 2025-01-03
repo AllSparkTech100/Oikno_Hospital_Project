@@ -10,7 +10,7 @@ function Contact() {
               <h4 className=" uppercase text-center text-4xl lg:text-7xl font-bold">
                 contact us
               </h4>
-              <p className="text-center text-xl">In a world where mental health challenges are escalating, leaving individuals vulnerable to stress,<br className="hidden sm:block"/> job loss and more, the need for effective therapy and counseling has reached an overwhelming proportion
+              <p className="text-center text-xl">In a world where mental health challenges are escalating, leaving individuals vulnerable to stress,<br className="hidden sm:block" /> job loss and more, the need for effective therapy and counseling has reached an overwhelming proportion
               </p>
             </div>
           </div>
