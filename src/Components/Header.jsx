@@ -13,7 +13,7 @@ function Header() {
       <header className="sticky top-0 z-10 bg-green-400 text-white">
         <div className="max-w-4xl flex justify-between items-center p-4">
 
-          <img href='/' src="/mhslogo.png" className="p-3 h-12 w-42 " alt="Logo" />
+          <img href='/' src="/mhslogo.png" className=" h-12 w-42 " alt="Logo" />
 
 
           <div>

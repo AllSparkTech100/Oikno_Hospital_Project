@@ -65,13 +65,12 @@ function Home() {
               engaging events
             </h3>
             <p className="my-5 text-left text-sm">
-              Mental Health and Saner Ltd is dedicated to promoting mental
-              wellness and providing comprehensive support services for
-              individuals and organizations. We specialize in counseling,
-              therapy, and mental health education, empowering people to lead
-              healthier, more balanced lives.
+            To inspire a widespread shift towards proactive mental health
+            practices, fostering healthier and sounder lives for all, equipping
+            individuals with the tools to navigate mental health challenges,
+            prevent triggers and cultivate a wholistic wellbeing.
             </p>
-            <button className="bg-green-900 my-5  md:hover:bg-blue-900 px-4 py-2">
+            <button className="bg-green-900 my-5md:hover:bg-blue-900 px-4 py-2">
               <a
                 href=""
                 className="text-white capitalize flex items-center justify-between gap-4"
