@@ -1,4 +1,4 @@
-import { abuja } from '/bgvideo.mp4';
+// import { abuja } from '/bgvideo.mp4';
 // import { abuja } from '../lib/Vids.jsx';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -10,7 +10,7 @@ function Videos() {
     const videoSet = [
         {
             title: "Abuja Therapy",
-            video: { abuja },
+            video: "/bgvideo.mp4",
             text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore impedit voluptatibus totam in sapiente, quod distinctio quam itaque blanditiis veniam soluta nihil necessitatibus voluptas repellendus quia alias? Repellat, quod facere."
         },
     ]
