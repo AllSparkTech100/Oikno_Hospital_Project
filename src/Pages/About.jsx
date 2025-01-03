@@ -5,13 +5,13 @@ import { dir_img } from "../lib/Images";
 function About() {
   return (
     <>
-      <div className="relative h-screen lg:h-screen">
+      <div className="relative h-screen md:h-[35rem] lg:h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 mx-auto my-20 sm:my-40 ">
+          <div className="relative p-5 mx-auto my-20 md:my-15 lg:my-40 ">
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
-              <h1 className=" uppercase text-center text-3xl md:text-5xl lg:text-7xl font-bold text-white">
+              <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold text-white">
                 About Mental Health <br />
-                Plus and Saner Limited
+                Plus and Saner LTD.
               </h1>
               <p className="mt-2 mb-7 text-white text-justify md:text-center lg:text-center">
                 Mental Health Plus and Saner Limited is a registered brand with
