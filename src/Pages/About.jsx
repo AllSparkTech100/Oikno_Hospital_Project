@@ -10,8 +10,7 @@ function About() {
           <div className="relative p-5 mx-auto my-20 md:my-15 lg:my-40 ">
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
               <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold text-white">
-                About Mental Health <br />
-                Plus and Saner LTD.
+                About Us.
               </h1>
               <p className="mt-2 mb-7 text-white text-justify md:text-center lg:text-center">
                 Mental Health Plus and Saner Limited is a registered brand with
@@ -49,15 +48,15 @@ function About() {
             Vision
           </h3>
           <p className="mt-4 lg:mt-5 text-white">
-           To create a future where mental health is a priority not an after thought.
-           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 mt-3 underline-offset-4">
-            Core Values
-          </h3>
-           <ul className="list-disc leading-loose">
-            <li>Client centred care</li>
-            <li>Psycho eucation/mental health education</li>
-            <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
-           </ul>
+            To create a future where mental health is a priority not an after thought.
+            <h3 className="capitalize text-2xl font-bold underline text-yellow-500 mt-3 underline-offset-4">
+              Core Values
+            </h3>
+            <ul className="list-disc leading-loose">
+              <li>Client centred care</li>
+              <li>Psycho eucation/mental health education</li>
+              <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
+            </ul>
           </p>
         </div>
       </section>

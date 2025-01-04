@@ -10,22 +10,21 @@ function ContactCard() {
   return (
     <>
       <div className="container h-full mx-auto mt-32 mb-10  p-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
           <div className="p-5">
             <div className="my-4">
               <h3 className="font-bold text-yellow-500 text-xl lg:text-2xl mb-1 uppercase">
                 send us a message
               </h3>
-              <h5 className="text-lg mb-2">
-                Book a session or make an enquiry
-              </h5>
+             
               <p className="mt-2 text-lg text-justify">
                 Schedule a session with our highly qualified licensed practitioners. The consultation can be conducted from wherever you feel most comfortable. <span className="font-bold text-2xl uppercase text-black">
                   no travel, no clinics
                 </span>
               </p>
             </div>
-            <div className="mt-8"> <form action="">
+            <div className="mt-8">
+            <form action="">
               {/* FullName */}
               <div className="mb-3 flex gap-3 flex-col mt-3">
                 <label className="font-semibold" htmlFor="fullname">Full Name</label>
@@ -48,7 +47,7 @@ function ContactCard() {
                 <textarea className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="" id="" cols="30" rows="10"></textarea>
               </div>
 
-              <button className="w-full flex items-center justify-center mt-3 rounded-md p-2 bg-slate-800 text-white text-center cursor:pointer">
+              <button className="w-full flex items-center justify-center lg:mt-4 mt-7 rounded-md p-2 bg-slate-800 text-white text-center cursor:pointer">
                 <span className="text-white mr-2"><LuSend size={25} /></span> Submit
               </button>
             </form></div>
@@ -67,7 +66,7 @@ function ContactCard() {
             get in touch
           </h3>
 
-          <h4 className="text-2xl lg:text-3xl capitalize">
+          <h4 className="text-xl lg:text-3xl capitalize">
             seamless communication, global Impact</h4>
         </div>
         <div className="grid grid-cols-1 mt-20 gap-5 lg:grid-cols-3 md:grid-cols-2">
@@ -76,7 +75,7 @@ function ContactCard() {
             <div className=" text-center text-white">
               <FaLocationDot className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Head Office</h3>
-              <p className="mt-3"> 16 Lekki Avenue, Ikeja Lagos state.</p>
+              <p className="mt-3"> 111 Timber Street, Mile 2 Diobu, Port-Harcourt, Rivers State Nigeria.</p>
             </div>
           </div>
           {/* Email Contact */}
