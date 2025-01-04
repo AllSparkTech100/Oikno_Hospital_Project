@@ -1,4 +1,4 @@
-
+import Service
 
 function Services() {
   return (
@@ -15,6 +15,9 @@ function Services() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-20">
+        <ServiceCard/>
       </div>
     </>
   )
