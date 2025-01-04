@@ -67,40 +67,48 @@ function About() {
           {/* items */}
           <div className=" place-items-center h-full p-4 w-full text-center">
             <FaRegCircle className="my-3" size={35} />
-            <h4 className="font-semibold  capitalize text-lg">
-              Recognize The Need
-            </h4>
-            <p className="my-5">
-              Acknowledge the importance of your mental health. Identifying signs of mental distress and making the courageous decisions.
-            </p>
+            <div>
+              <h4 className="font-semibold  capitalize text-lg">
+                Recognize The Need
+              </h4>
+              <p className="my-5">
+                Acknowledge the importance of your mental health. Identifying signs of mental distress and making the courageous decisions.
+              </p>
+            </div>
           </div>
           <div className="place-items-center h-ful p-4 w-full text-center">
             <FaSearch className="my-3" size={35} />
-            <h4 className="font-semibold capitalize text-lg">
-              Select Your Service
-            </h4>
-            <p className="my-5">
-              Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
-            </p>
+            <div>
+              <h4 className="font-semibold capitalize text-lg">
+                Select Your Service
+              </h4>
+              <p className="my-5">
+                Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
+              </p>
+            </div>
           </div>
           <div className=" place-items-center h-full p-4 w-full text-center">
             <FaUserFriends className="my-3" size={35} />
-            <h4 className="font-semibold  capitalize text-lg">
-              Choose your Therapist
-            </h4>
-            <p className="my-5">
-              Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
-            </p>
+            <div>
+              <h4 className="font-semibold  capitalize text-lg">
+                Choose your Therapist
+              </h4>
+              <p className="my-5">
+                Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
+              </p>
+            </div>
           </div>
           <div className=" place-items-center h-full p-4 w-full text-center">
             <BsChatSquareDotsFill className="my-3" size={35} />
-            <h4 className="font-semibold  capitalize text-lg">
-              start your sessions
-            </h4>
-            <p className="my-5">
-              Develop a sustainable maintenance plan, and ensure ongoing progress by scheduling follow-up sessions.
-              Your journey to mental wellness begins here.
-            </p>
+            <div>
+              <h4 className="font-semibold  capitalize text-lg">
+                start your sessions
+              </h4>
+              <p className="my-5">
+                Develop a sustainable maintenance plan, and ensure ongoing progress by scheduling follow-up sessions.
+                Your journey to mental wellness begins here.
+              </p>
+            </div>
           </div>
         </div>
       </div>
