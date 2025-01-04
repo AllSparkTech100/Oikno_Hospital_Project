@@ -2,7 +2,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 import { LuSend } from "react-icons/lu";
 import { IoCall } from "react-icons/io5";
-import { work } from "../lib/Images";
+import { work } from "../../lib/Images";
 
 
 
