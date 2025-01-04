@@ -1,4 +1,4 @@
-import Service
+import ServiceCard from "../Components/Cards/ServiceCard";
 
 function Services() {
   return (
@@ -17,7 +17,7 @@ function Services() {
         </div>
       </div>
       <div className="mt-20">
-        <ServiceCard/>
+        <ServiceCard />
       </div>
     </>
   )
