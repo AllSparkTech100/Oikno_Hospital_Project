@@ -1,39 +1,40 @@
 import { dir_img } from "../lib/Images";
-// import { FaFacebook } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 function About() {
   return (
     <>
-      <div className="relative h-screen md:h-[35rem] lg:h-screen">
+      <div className="relative h-80 md:h-[35rem] lg:h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 mx-auto my-20 md:my-15 lg:my-40 ">
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
               <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold text-white">
                 About Us.
               </h1>
-              <p className="mt-2 mb-7 text-white text-justify md:text-center lg:text-center">
-                Mental Health Plus and Saner Limited is a registered brand with
-                the Nigerian corporate affairs commission with Registration No.:
-                <span className="text-yellow-300 font-bold italic">7137614</span>{" "}
-                whose mission is to inspire a widespread shift towards proactive
-                mental health practices, equipping individuals with the tools to
-                navigate mental health challenges, preventing triggers and
-                cultivate a holistic well-being. Through a multifaceted approach
-                of webinars, workshops, conferences and personalized sessions
-                ignites a spark of hope and resilience on inividuals dealing with
-                mental health conditions.
-              </p>
             </div>
           </div>
         </div>
       </div>
 
-
+      <div className="my-20 container mx-auto p-5 text-center">
+        <p className="mt-2 mb-7 text-black text-justify md:text-center lg:text-center">
+          Mental Health Plus and Saner Limited is a registered brand with
+          the Nigerian corporate affairs commission with Registration No.:
+          <span className="text-blue-700 font-bold italic"> 7137614</span>{" "}
+          whose mission is to inspire a widespread shift towards proactive
+          mental health practices, equipping individuals with the tools to
+          navigate mental health challenges, preventing triggers and
+          cultivate a holistic well-being. Through a multifaceted approach
+          of webinars, workshops, conferences and personalized sessions
+          ignites a spark of hope and resilience on inividuals dealing with
+          mental health conditions.
+        </p>
+      </div>
       {/* Mission and Vision Statement */}
-      <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-40 justify-evenly-center p-5 gap-4">
+      <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-20 justify-evenly-center p-5 gap-4">
         <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
-            mission
+            our mission
           </h3>
           <p className="mt-4 lg:mt-12 text-white">
             To inspire a widespread shift towards proactive mental health
@@ -44,14 +45,12 @@ function About() {
         </div>
         <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
-            Vision
+            Our Vision & Core Values
           </h3>
           <p className="mt-4 lg:mt-5 text-white">
             To create a future where mental health is a priority not an after thought.
-            <h3 className="capitalize text-2xl font-bold underline text-yellow-500 mt-3 underline-offset-4">
-              Core Values
-            </h3>
-            <ul className="list-disc leading-loose">
+
+            <ul className="list-disc mt-2 leading-loose">
               <li>Client centred care</li>
               <li>Psycho eucation/mental health education</li>
               <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
@@ -59,7 +58,46 @@ function About() {
           </p>
         </div>
       </section>
+      {/* information */}
 
+      <div className="container bg-green-600 mt-28 mx-auto p-4 h-auto">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
+          <div className="bg-red-500 h-ful p-4 w-full text-center">
+            <h4 className="font-semibold  capitalize text-lg">
+              Recognize The Need
+            </h4>
+            <p className="my-5">
+              Acknowledge the importance of your mental health. Identifying signs of mental distress and making the courageous decisions.
+            </p>
+          </div>
+          <div className="bg-red-500 place-items-center h-ful p-4 w-full text-center">
+          <FaSearch className="my-3" size={35}/>
+            <h4 className="font-semibold capitalize text-lg">
+            Select Your Service
+            </h4>
+            <p className="my-5">
+            Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
+            </p>
+          </div>
+          <div className="bg-red-500 h-ful p-4 w-full text-center">
+            <h4 className="font-semibold  capitalize text-lg">
+           Choose your Therapist
+            </h4>
+            <p className="my-5">
+            Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
+            </p>
+          </div>
+          <div className="bg-red-500 h-ful p-4 w-full text-center">
+            <h4 className="font-semibold  capitalize text-lg">
+           start your sessions
+            </h4>
+            <p className="my-5">
+            Develop a sustainable maintenance plan, and ensure ongoing progress by scheduling follow-up sessions.
+            Your journey to mental wellness begins here.
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Description of the CEO */}
       <section className="mt-40">
         <div className="container w-full bg-slate-900 mx-auto p-4 rounded-lg">
