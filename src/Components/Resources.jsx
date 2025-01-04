@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import Videos from './Videos';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
