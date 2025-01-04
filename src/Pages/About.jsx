@@ -1,5 +1,6 @@
 import { dir_img } from "../lib/Images";
 import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
+import { BsChatSquareDotsFill } from "react-icons/bs";
 
 
 function About() {
@@ -61,10 +62,10 @@ function About() {
       </section>
       {/* information */}
 
-      <div className="container bg-green-600 mt-28 mx-auto p-4 h-auto">
+      <div className="container mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
           {/* items */}
-          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
+          <div className=" place-items-center h-full p-4 w-full text-center">
             <FaRegCircle className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
               Recognize The Need
@@ -73,7 +74,7 @@ function About() {
               Acknowledge the importance of your mental health. Identifying signs of mental distress and making the courageous decisions.
             </p>
           </div>
-          <div className="bg-red-500 place-items-center h-ful p-4 w-full text-center">
+          <div className="place-items-center h-ful p-4 w-full text-center">
             <FaSearch className="my-3" size={35} />
             <h4 className="font-semibold capitalize text-lg">
               Select Your Service
@@ -82,7 +83,7 @@ function About() {
               Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
             </p>
           </div>
-          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
+          <div className=" place-items-center h-full p-4 w-full text-center">
             <FaUserFriends className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
               Choose your Therapist
@@ -91,8 +92,8 @@ function About() {
               Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
             </p>
           </div>
-          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
-            <FaSearch className="my-3" size={35} />
+          <div className=" place-items-center h-full p-4 w-full text-center">
+            <BsChatSquareDotsFill className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
               start your sessions
             </h4>
