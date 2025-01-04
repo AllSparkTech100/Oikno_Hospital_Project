@@ -1,5 +1,6 @@
 import { dir_img } from "../lib/Images";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
+
 
 function About() {
   return (
@@ -62,7 +63,9 @@ function About() {
 
       <div className="container bg-green-600 mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
-          <div className="bg-red-500 h-ful p-4 w-full text-center">
+          {/* items */}
+          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
+            <FaRegCircle className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
               Recognize The Need
             </h4>
@@ -71,29 +74,31 @@ function About() {
             </p>
           </div>
           <div className="bg-red-500 place-items-center h-ful p-4 w-full text-center">
-          <FaSearch className="my-3" size={35}/>
+            <FaSearch className="my-3" size={35} />
             <h4 className="font-semibold capitalize text-lg">
-            Select Your Service
+              Select Your Service
             </h4>
             <p className="my-5">
-            Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
+              Explore our comprehensive directory of licensed therapists, each specializing in various areas of mental health to cater to your unique needs.
             </p>
           </div>
-          <div className="bg-red-500 h-ful p-4 w-full text-center">
+          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
+            <FaUserFriends className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
-           Choose your Therapist
+              Choose your Therapist
             </h4>
             <p className="my-5">
-            Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
+              Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
             </p>
           </div>
-          <div className="bg-red-500 h-ful p-4 w-full text-center">
+          <div className="bg-red-500  place-items-center h-full p-4 w-full text-center">
+            <FaSearch className="my-3" size={35} />
             <h4 className="font-semibold  capitalize text-lg">
-           start your sessions
+              start your sessions
             </h4>
             <p className="my-5">
-            Develop a sustainable maintenance plan, and ensure ongoing progress by scheduling follow-up sessions.
-            Your journey to mental wellness begins here.
+              Develop a sustainable maintenance plan, and ensure ongoing progress by scheduling follow-up sessions.
+              Your journey to mental wellness begins here.
             </p>
           </div>
         </div>
