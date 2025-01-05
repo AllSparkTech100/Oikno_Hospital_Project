@@ -1,6 +1,7 @@
 import { dir_img } from "../lib/Images";
 import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
-import { BsChatSquareDotsFill } from "react-icons/bs";
+import { BsChatSquareDotsFill } from "react-icons/bs"; import { IoCall } from "react-icons/io5";
+
 
 
 function About() {
@@ -111,6 +112,24 @@ function About() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Questions */}
+      <div className="container h-80 p-6 mx-auto my-20">
+        <div className="flex flex-col gap-5 lg:flex-row md:flex-row">
+          <div className="mt-4 mb-4">
+            <h4 className="font-medium text-2xl lg:text-5xl md:text-2xl capitalize">
+              frequently asked <br /> questions
+            </h4><p className="my-2 text-lg">
+              your privacy and comfort is our priority!!
+            </p>
+            <button className="mt-3 items-center justify-center p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 flex-row rounded-lg text-white">
+              <span><IoCall size={30} /></span>
+              <a href="tel:+2348149944531">+2348149944531</a>
+            </button>
+          </div>
+        
         </div>
       </div>
       {/* Description of the CEO */}
