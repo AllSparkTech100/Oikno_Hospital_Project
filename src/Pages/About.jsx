@@ -34,7 +34,7 @@ function About() {
       </div>
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-20 justify-evenly-center p-5 gap-4">
-        <div className="rounded-lg border \\\-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div className="rounded-lg border bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             our mission
           </h3>
@@ -45,7 +45,7 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div className="rounded-lg border border-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div className="rounded-lg bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Our Vision & Core Values
           </h3>
