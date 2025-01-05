@@ -6,8 +6,8 @@ import { BsChatSquareDotsFill } from "react-icons/bs";
 function About() {
   return (
     <>
-      <div className="relative h-80 md:h-[35rem] lg:h-screen">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+      <div className="relative h-80 md:h-[35rem] lg:h-96">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom lg:bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 mx-auto my-20 md:my-15 lg:my-40 ">
             <div className="flex-col justify-center items-center flex gap-8 place-items-center">
               <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold text-white">
@@ -34,7 +34,7 @@ function About() {
       </div>
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-20 justify-evenly-center p-5 gap-4">
-        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div className="rounded-lg border \\\-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             our mission
           </h3>
@@ -45,7 +45,7 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div className="rounded-lg bg-slate-900 shadow-inner shadow-slate-500 p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div className="rounded-lg border border-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Our Vision & Core Values
           </h3>
@@ -54,14 +54,15 @@ function About() {
 
             <ul className="list-disc mt-2 leading-loose">
               <li>Client centred care</li>
-              <li>Psycho eucation/mental health education</li>
+              <li>Psycho education/mental health education</li>
               <li>Develop, understand and find tools for coping and recieving counselling, therapies and practical assistance.</li>
             </ul>
           </p>
         </div>
       </section>
-      {/* information */}
 
+
+      {/* information */}
       <div className="container mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
           {/* items */}
