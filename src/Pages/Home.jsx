@@ -33,7 +33,7 @@ function Home() {
 
 
       {/* Description */}
-      <div className="flex mt-48 bg-[#7eea00] text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
+      <div className="flex mt-48 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
           <p className="font-normal text-justify">
             Mental Health and Saner Ltd is dedicated to promoting mental
