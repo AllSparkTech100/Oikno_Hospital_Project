@@ -1,6 +1,7 @@
 import { dir_img } from "../lib/Images";
 import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
-import { BsChatSquareDotsFill } from "react-icons/bs"; import { IoCall } from "react-icons/io5";
+import { BsChatSquareDotsFill } from "react-icons/bs"; 
+import Frequent from '../Components/Frequent';
 
 
 
@@ -115,26 +116,14 @@ function About() {
         </div>
       </div>
 
-      {/* Questions */}
-      <div className="container h-80 p-6 mx-auto my-20">
-        <div className="flex flex-col gap-5 lg:flex-row md:flex-row">
-          <div className="mt-4 mb-4">
-            <h4 className="font-medium text-2xl lg:text-5xl md:text-2xl capitalize">
-              frequently asked <br /> questions
-            </h4><p className="my-2 text-lg">
-              your privacy and comfort is our priority!!
-            </p>
-            <button className="mt-3 items-center justify-center p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 flex-row rounded-lg text-white">
-              <span><IoCall size={30} /></span>
-              <a href="tel:+2348149944531">+2348149944531</a>
-            </button>
-          </div>
-        
+      {/* Questions */} 
+      <div>
+          <Frequent/>
         </div>
-      </div>
+      
       {/* Description of the CEO */}
       <section className="mt-40">
-        <div className="container w-full bg-slate-900 mx-auto p-4 rounded-lg">
+        <div className="container w-full mx-auto p-4 rounded-lg">
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
             <div className="">
@@ -145,7 +134,7 @@ function About() {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="flex bg-white rounded-lg mt-5 py-4 px-1 items-center gap-4 justify-center">
+              <div className="flex bg-black rounded-lg mt-5 py-4 px-1 items-center gap-4 justify-center">
                 {/* <div className="flex items-center justify-center rounded-full p-2 bg-green-900">
                   <FaFacebook size={20} />
 
@@ -156,7 +145,7 @@ function About() {
             {/* CEO description */}
             <div className=" mt-8 flex-1 lg:w-full lg:m-0">
               <div className="text-center">
-                <h3 className="font-bold text-2xl uppercase text-yellow-500">
+                <h3 className="font-bold text-2xl uppercase text-black">
                   Alexander comfort
                 </h3>
                 <div className="italic my-2 text-white uppercase">

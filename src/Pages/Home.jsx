@@ -7,8 +7,8 @@ import {
   convert,
 } from "../lib/Images";
 import { FaArrowCircleRight, FaFacebook, FaDonate } from "react-icons/fa";
-
 import Feedback from "../Components/Feedback";
+import Frequent from "../Components/Frequent";
 
 function Home() {
   return (
@@ -65,10 +65,10 @@ function Home() {
               engaging events
             </h3>
             <p className="my-5 text-left text-sm">
-            To inspire a widespread shift towards proactive mental health
-            practices, fostering healthier and sounder lives for all, equipping
-            individuals with the tools to navigate mental health challenges,
-            prevent triggers and cultivate a wholistic wellbeing.
+              To inspire a widespread shift towards proactive mental health
+              practices, fostering healthier and sounder lives for all, equipping
+              individuals with the tools to navigate mental health challenges,
+              prevent triggers and cultivate a wholistic wellbeing.
             </p>
             <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
@@ -230,6 +230,10 @@ function Home() {
         </h3>
         <Feedback />
       </section>
+
+      <div >
+        <Frequent />
+      </div>
     </>
   );
 }
