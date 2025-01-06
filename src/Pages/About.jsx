@@ -143,17 +143,17 @@ function About() {
             </div>
 
             {/* CEO description */}
-            <div className=" mt-8 flex-1 lg:w-full lg:m-0">
+            <div className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
               <div className="text-center">
-                <h3 className="font-bold text-2xl uppercase text-black">
+                <h3 className="font-bold text-2xl uppercase">
                   Alexander comfort
                 </h3>
-                <div className="italic my-2 text-white uppercase">
+                <div className="italic my-2 uppercase">
                   the girl who stood up for mental health in nigeria
                 </div>
               </div>
               <hr />
-              <div className="mt-8 text-justify text-white">
+              <div className="mt-8 text-justify">
                 <p className="mt-4">
                   She is a practicing counseling psychologist specializing in
                   Clinical and Mental Health Counseling. With a strong
