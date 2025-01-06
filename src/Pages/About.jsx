@@ -9,10 +9,10 @@ function About() {
   return (
     <>
       <div className="relative h-80 md:h-[35rem] lg:h-96">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom lg:bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 mx-auto my-20 md:my-15 lg:my-40 ">
-            <div className="flex-col justify-center items-center flex gap-8 place-items-center">
-              <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold text-white">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/seren.jpeg')] bg-cover bg-bottom lg:bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+          <div className="relative p-5 mx-auto my-28 md:my-15 lg:my-36 ">
+            <div className="flex-col justify-center items-center flex text-white gap-8 place-items-center">
+              <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
                 About Us.
               </h1>
             </div>
@@ -124,6 +124,12 @@ function About() {
       {/* Description of the CEO */}
       <section className="mt-40">
         <div className="container w-full mx-auto p-4 rounded-lg">
+
+        <div className="text-center my-10 font-bold">
+          <h4 className="uppercase text-xl lg:text-2xl">
+get to know our ceo
+          </h4>
+        </div>
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
             <div className="">
@@ -152,7 +158,7 @@ function About() {
                   the girl who stood up for mental health in nigeria
                 </div>
               </div>
-              <hr />
+              <hr className="border-2 rounded-lg border-blue-700" />
               <div className="mt-8 text-justify">
                 <p className="mt-4">
                   She is a practicing counseling psychologist specializing in
