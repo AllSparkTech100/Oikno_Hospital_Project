@@ -1,6 +1,6 @@
 import {
     suicide,
-    // convert,
+    art,
 } from "../../lib/Images";
 
 import { FaUserFriends } from "react-icons/fa";
@@ -12,7 +12,7 @@ function ServiceCard() {
             <div className="grid grid-cols-1 gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
 
                 <div className="h-64 w-full object-center">
-                    <img src={suicide} className="rounded-lg object-cover w-full h-full" alt="" />
+                    <img src={art} className="rounded-lg object-cover w-full h-full" alt="" />
                 </div>
                 <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold">

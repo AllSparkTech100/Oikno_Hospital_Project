@@ -7,3 +7,4 @@ export { default as converse } from "../assets/converse.webp";
 export { default as convert } from "../assets/convert.webp";
 export { default as work } from "../assets/work.svg";
 export {default as suicide} from "../assets/suicide.jpg";
+export {default as art} from "../assets/art.jpg";

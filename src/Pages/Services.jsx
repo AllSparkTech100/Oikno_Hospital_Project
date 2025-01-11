@@ -15,8 +15,8 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="container mt-20 mx-auto p-4 h-auto bg-red-500">
-        <h3 className="uppercase font-bold text-lg text-gray-500">our services / intervention</h3>
+      <div className="container mt-20 mx-auto p-4 h-auto">
+        <h3 className="uppercase underline font-bold text-lg lg:text-2xl">our services / intervention</h3>
         <div className="my-10">
           <ServiceCard />
         </div>
