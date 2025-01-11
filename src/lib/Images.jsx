@@ -6,3 +6,4 @@ export { default as therapist_img } from "../assets/therapist.jpeg";
 export { default as converse } from "../assets/converse.webp";
 export { default as convert } from "../assets/convert.webp";
 export { default as work } from "../assets/work.svg";
+export {default as suicide} from "../assets/suicide.jpg";
