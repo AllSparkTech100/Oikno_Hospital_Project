@@ -20,6 +20,11 @@ function FormData() {
                     <label className="font-semibold" htmlFor="number">Mobile Number </label>
                     <input type="phone" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="fullname" id="" placeholder="e.g +234123456788" required />
                 </div>
+                {/* Category */}
+                <div className="mb-3 flex gap-3 flex-col mt-3">
+                    <label className="font-semibold" htmlFor="therapy">Therapy Option </label>
+                    <input type="phone" className="p-3 placeholder:text-black/40 outline border-gray-700 outline-1 bg-white focus:outline-orange-500 w-full rounded-md" name="fullname" id="" placeholder="e.g +234123456788" required />
+                </div>
                 {/* Textarea for message */}
                 <div className="mb-3 flex gap-3 flex-col mt-3">
                     <label className="font-semibold" htmlFor="message">Message </label>
