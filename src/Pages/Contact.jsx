@@ -15,8 +15,10 @@ function Contact() {
           </div>
         </div>
       </div>
-
-      <ContactCard />
+<div>
+  
+<ContactCard />
+</div>
     </>
   );
 }

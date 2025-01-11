@@ -50,7 +50,8 @@ function ContactCard() {
               <button className="w-full flex items-center justify-center lg:mt-4 mt-7 rounded-md p-2 bg-slate-800 text-white text-center cursor:pointer">
                 <span className="text-white mr-2"><LuSend size={25} /></span> Submit
               </button>
-            </form></div>
+            </form>
+            </div>
           </div>
 
           <div className="h-full order-first lg:order-none md:order-none w-full">
