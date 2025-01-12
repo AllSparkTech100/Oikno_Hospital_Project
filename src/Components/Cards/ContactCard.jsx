@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
-import FormData from '../../Components/FormData'
+import FormData from '../Forms/FormData'
 import { IoCall } from "react-icons/io5";
 import { work } from "../../lib/Images";
 
