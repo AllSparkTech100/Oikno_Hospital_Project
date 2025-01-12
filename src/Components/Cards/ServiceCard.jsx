@@ -15,7 +15,7 @@ function ServiceCard() {
 
             <div className="grid grid-cols-1 gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
 
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={art} loading='lazy' className="object-cover w-full h-full" alt="Art Therapy" />
                 </div>
                 <div className="...">
@@ -27,7 +27,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* first */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={counsel} loading="lazy" className="object-cover w-full h-full" alt="Cognitive Thearpy" />
                 </div>
                 <div className="...">
@@ -39,7 +39,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* second */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={child_counsel} loading="lazy" className="object-cover object-top w-full h-full" alt="REBT" />
                 </div>
                 <div className="...">
@@ -51,7 +51,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* third */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={therapist_img} loading="lazy" className="object-top object-cover w-full h-full" alt="Behaviour Modification" />
                 </div>
                 <div className="...">
@@ -63,7 +63,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* fourth */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={converse} loading="lazy" className="object-cover w-full h-full" alt="Counselling" />
                 </div>
                 <div className="...">
@@ -75,7 +75,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* fifth */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={suicide} loading="lazy" className="object-cover w-full h-full" alt="Suicide Intervention" />
                 </div>
                 <div className="...">
@@ -87,7 +87,7 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* sixth */}
-                <div className="h-64 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={convert} loading="lazy" className="object-cover w-full h-full" alt="Psycho Education" />
                 </div>
                 <div className="...">
