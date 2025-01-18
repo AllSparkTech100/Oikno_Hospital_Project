@@ -17,22 +17,7 @@ import { LuSend } from "react-icons/lu";
 
 function FormData() {
 
-    // const [state, setState] = useState(initState);
-    // const { values, error } = state;
-
-    // const handleChange = ({ target }) => setState((prev) => ({
-    //     ...prev,
-    //     values: {
-    //         ...prev.values,
-    //         [target.name]: target.value,
-    //     },
-    // }));
-
-    // const onSubmit = async () => {
-    //     e.preventDefault()
-    //     setState((prev) => ({
-    //         ...prev,
-    //     }));
+    
 
     //     try {
     //         await sendContactForm(values);
@@ -46,12 +31,8 @@ function FormData() {
     // }
     return (
         <>
-        {
-            {/* error && (
-                <h5>{error}</h5>
-            ) */}
-        }
-            <form method="POST" >
+      
+            <form method="" action="" >
                 {/* FullName */}
                 <div className="mb-3 flex gap-3 flex-col mt-3">
                     <label className="font-semibold" htmlFor="name">Full Name</label>

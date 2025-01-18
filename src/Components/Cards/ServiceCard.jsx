@@ -13,13 +13,13 @@ function ServiceCard() {
     return (
         <>
 
-            <div className="grid grid-cols-1 items-center gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:gap-y-10 gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
 
                 <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={art} loading='lazy' className="object-cover w-full h-full" alt="Art Therapy" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold">
                         art therapy
                     </h4>
                     <p className="mt-3 text-lg">
@@ -31,7 +31,7 @@ function ServiceCard() {
                     <img src={counsel} loading="lazy" className="object-cover w-full h-full" alt="Cognitive Thearpy" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         cognitive-behavioural therapy
                     </h4>
                     <p className="mt-3 text-lg">
@@ -43,7 +43,7 @@ function ServiceCard() {
                     <img src={child_counsel} loading="lazy" className="object-cover object-top w-full h-full" alt="REBT" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl  font-semibold  ">
                         Dialectical behavioural/REBT
                     </h4>
                     <p className="mt-3 text-lg">
@@ -55,7 +55,7 @@ function ServiceCard() {
                     <img src={therapist_img} loading="lazy" className="object-top object-cover w-full h-full" alt="Behaviour Modification" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         behavioural modification
                     </h4>
                     <p className="mt-3 text-lg">
@@ -67,7 +67,7 @@ function ServiceCard() {
                     <img src={converse} loading="lazy" className="object-cover w-full h-full" alt="Counselling" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         counselling
                     </h4>
                     <p className="mt-3 text-lg">
@@ -79,7 +79,7 @@ function ServiceCard() {
                     <img src={suicide} loading="lazy" className="object-cover w-full h-full" alt="Suicide Intervention" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         suicide intervention
                     </h4>
                     <p className="mt-3 text-lg">
@@ -91,7 +91,7 @@ function ServiceCard() {
                     <img src={convert} loading="lazy" className="object-cover w-full h-full" alt="Psycho Education" />
                 </div>
                 <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl font-semibold  ">
+                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         psycho education
                     </h4>
                     <p className="mt-3 text-lg">
