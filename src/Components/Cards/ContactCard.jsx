@@ -50,7 +50,7 @@ function ContactCard() {
             <div className=" text-center text-white">
               <FaLocationDot className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Head Office</h3>
-              <p className="mt-3"> 111 Timber Street, Mile 2 Diobu, Port-Harcourt, Rivers State Nigeria.</p>
+              <p className="mt-3">Port-Harcourt, Rivers State Nigeria.</p>
             </div>
           </div>
           {/* Email Contact */}
