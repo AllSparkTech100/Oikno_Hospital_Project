@@ -1,239 +1,273 @@
 import { useState } from "react";
 
-function Book() {
+function  Book () {
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    fullname: '',
+    gender: '',
+    phone: '',
+    email: '',
+    address: '',
+    country: '',
+    state: '',
+    province: '',
+    therapyQuestions: [],
+    therapyPreferences: '',
+  });
 
-    const [step, setStep] = useState(1);
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        date: "",
-        time: "",
-        notes: "",
-    });
+  const [errors, setErrors] = useState({});
 
-    const totalSteps = 5;
+  const therapyQuestions = [
+    'Stress Management',
+    'Anxiety Reduction',
+    'Depression Therapy',
+    'Couples Counseling',
+    'Grief Counseling',
+  ];
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-            ...prevData,
-            [name]: value,
+  const handleNext = () => {
+    const currentErrors = validateForm();
+    if (Object.keys(currentErrors).length === 0) {
+      setStep((prev) => prev + 1);
+    } else {
+      setErrors(currentErrors);
+    }
+  };
+
+  const handlePrev = () => setStep((prev) => prev - 1);
+
+  const validateForm = () => {
+    const currentErrors = {};
+    if (step === 1) {
+      if (!formData.fullname) currentErrors.fullname = 'Full name is required';
+      if (!formData.gender) currentErrors.gender = 'Gender is required';
+      if (!formData.phone) currentErrors.phone = 'Phone number is required';
+      if (!formData.email) currentErrors.email = 'Email is required';
+    }
+    if (step === 2) {
+      if (!formData.address) currentErrors.address = 'Address is required';
+      if (!formData.country) currentErrors.country = 'Country is required';
+      if (!formData.state) currentErrors.state = 'State is required';
+      if (!formData.province) currentErrors.province = 'Province is required';
+    }
+    if (step === 3) {
+      if (formData.therapyQuestions.length === 0)
+        currentErrors.therapyQuestions = 'Please select at least one therapy question';
+      if (!formData.therapyPreferences)
+        currentErrors.therapyPreferences = 'Therapy preferences are required';
+    }
+    return currentErrors;
+  };
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    if (type === 'checkbox') {
+      if (name === 'therapyQuestions') {
+        setFormData((prev) => ({
+          ...prev,
+          therapyQuestions: checked
+            ? [...prev.therapyQuestions, value]
+            : prev.therapyQuestions.filter((item) => item !== value),
         }));
-    };
+      }
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
+  };
 
-    const nextStep = () => setStep((prevStep) => prevStep + 1);
-    const prevStep = () => setStep((prevStep) => prevStep - 1);
+  const progress = (step / 3) * 100;
 
-    // Validation: Check if all fields in the current step are filled
-    const isStepValid = () => {
-        switch (step) {
-            case 1:
-                return formData.name.trim() !== "" && formData.email.trim() !== "";
-            case 2:
-                return formData.phone.trim() !== "";
-            case 3:
-                return formData.date.trim() !== "" && formData.time.trim() !== "";
-            case 4:
-                // Notes are optional, so this step is always valid
-                return true;
-            case 5:
-                // Review step, all data should already be valid
-                return true;
-            default:
-                return false;
-        }
-    };
-
-    const renderStep = () => {
-        switch (step) {
-            case 1:
-                return (
-                    <div>
-                        <h2 className="text-xl lg:text-3xl font-semibold mb-4">Personal Details</h2>
-
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                            <div>
-                                <label className="capitalize my-3 font-medium text-lg">Full Name</label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
-                                    className="border-black focus:outline-none border-2 p-3 w-full my-4"
-                                    placeholder="James Peterson "
-                                    required
-                                />
-                            </div>
-
-                            <div>
-                                <label className="capitalize my-3 font-medium text-lg">Email</label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
-                                    className="border-black focus:outline-none border-2 p-3 w-full my-4"
-                                    placeholder="james@example.com"
-                                    required
-                                />
-                            </div>
-
-                            <div>
-                                <label className="capitalize my-3 font-medium text-lg">Date of Birth</label>
-                                <input
-                                    type="date"
-                                    name="date"
-                                    value={formData.date}
-                                    onChange={handleInputChange}
-                                    className="border-black focus:outline-none border-2 p-3 w-full my-4"
-                                    // placeholder="Enter your email"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="capitalize mb-3 font-medium text-lg">phone number</label>
-
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
-                                    className="border-black focus:outline-none border-2 p-3 w-full my-4"
-                                    placeholder="Enter your phone number"
-                                    required
-                                />
-                            </div>
-
-                        </div>
-
-                    </div>
-                );
-            case 2:
-                return (
-                    <div>
-                        <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
-                        <label className="capitalize mb-3 font-medium text-lg">gender</label>
-                        <p className="flex gap-4 items-center">
-                            <span><input type="checkbox" name="male" id="" /></span> male
-                        </p>
-                        {/* <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            className="border rounded-md p-2 w-full mb-4"
-                            placeholder="Enter your phone number"
-                            required
-                        /> */}
-                    </div>
-                );
-            case 3:
-                return (
-                    <div>
-                        <h2 className="text-xl font-semibold mb-4">Step 3: Appointment Details</h2>
-                        <label className="block mb-2">Select Date</label>
-                        <input
-                            type="date"
-                            name="date"
-                            value={formData.date}
-                            onChange={handleInputChange}
-                            className="border rounded-md p-2 w-full mb-4"
-                            required
-                        />
-                        <label className="block mb-2">Select Time</label>
-                        <input
-                            type="time"
-                            name="time"
-                            value={formData.time}
-                            onChange={handleInputChange}
-                            className="border rounded-md p-2 w-full mb-4"
-                            required
-                        />
-                    </div>
-                );
-            case 4:
-                return (
-                    <div>
-                        <h2 className="text-xl font-semibold mb-4">Step 4: Additional Notes</h2>
-                        <label className="block mb-2">Notes (Optional)</label>
-                        <textarea
-                            name="notes"
-                            value={formData.notes}
-                            onChange={handleInputChange}
-                            className="border rounded-md p-2 w-full mb-4"
-                            placeholder="Add any notes for your booking"
-                        />
-                    </div>
-                );
-            case 5:
-                return (
-                    <div>
-                        <h2 className="text-xl font-semibold mb-4">Review & Submit</h2>
-                        <ul className="mb-4">
-                            <li><strong>Name:</strong> {formData.name}</li>
-                            <li><strong>Email:</strong> {formData.email}</li>
-                            <li><strong>Phone:</strong> {formData.phone}</li>
-                            <li><strong>Date:</strong> {formData.date}</li>
-                            <li><strong>Time:</strong> {formData.time}</li>
-                            <li><strong>Notes:</strong> {formData.notes}</li>
-                        </ul>
-                        <button
-                            onClick={() => alert("Booking Submitted!")}
-                            className="bg-green-500 text-white px-4 py-2 rounded-md"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                );
-            default:
-                return null;
-        }
-    };
-
-    return (
-        <div className="container h-auto mx-auto mt-10 p-6">
-            {/* Progress Bar */}
-            <div className="mb-6">
-                <div className="relative w-full bg-gray-200 h-2 rounded-full">
-                    <div
-                        className="absolute top-0 left-0 h-2 bg-blue-500 rounded-full"
-                        style={{ width: `${(step / totalSteps) * 100}%` }}
-                    ></div>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">
-                    Step {step} of {totalSteps}
-                </p>
-            </div>
-
-            {/* Form Content */}
-            {renderStep()}
-
-            {/* Navigation Buttons */}
-            <div className="flex justify-between mt-6">
-                {step > 1 && (
-                    <button
-                        onClick={prevStep}
-                        className="bg-gray-300 text-black px-4 py-2"
-                    >
-                        Back
-                    </button>
-                )}
-                {step < totalSteps && (
-                    <button
-                        onClick={nextStep}
-                        disabled={!isStepValid()}
-                        className={`px-4 py-2 rounded-md ${isStepValid()
-                            ? "bg-blue-500 text-white"
-                            : "bg-gray-300 text-gray-500 cursor-not-allowed"
-                            }`}
-                    >
-                        Next
-                    </button>
-                )}
-            </div>
+  return (
+    <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+      <div className="mb-6">
+        <div className="h-2 bg-gray-200 rounded-full">
+          <div
+            className="h-2 bg-blue-500 rounded-full"
+            style={{ width: `${progress}%` }}
+          ></div>
         </div>
-    );
+        <p className="text-sm text-gray-600 mt-2">Step {step} of 3</p>
+      </div>
+
+      {step === 1 && (
+        <>
+          <h2 className="text-xl font-bold mb-4">Personal Information</h2>
+          <div className="mb-4">
+            <label className="block text-gray-700">Full Name</label>
+            <input
+              type="text"
+              name="fullname"
+              value={formData.fullname}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Gender</label>
+            <div className="flex items-center space-x-4">
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Male"
+                  onChange={handleChange}
+                  className="mr-2"
+                />
+                Male
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="Female"
+                  onChange={handleChange}
+                  className="mr-2"
+                />
+                Female
+              </label>
+            </div>
+            {errors.gender && <p className="text-red-500 text-sm">{errors.gender}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+          </div>
+        </>
+      )}
+
+      {step === 2 && (
+        <>
+          <h2 className="text-xl font-bold mb-4">Address Information</h2>
+          <div className="mb-4">
+            <label className="block text-gray-700">Address</label>
+            <input
+              type="text"
+              name="address"
+              value={formData.address}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Country</label>
+            <input
+              type="text"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.country && <p className="text-red-500 text-sm">{errors.country}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">State</label>
+            <input
+              type="text"
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.state && <p className="text-red-500 text-sm">{errors.state}</p>}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Province</label>
+            <input
+              type="text"
+              name="province"
+              value={formData.province}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.province && <p className="text-red-500 text-sm">{errors.province}</p>}
+          </div>
+        </>
+      )}
+
+      {step === 3 && (
+        <>
+          <h2 className="text-xl font-bold mb-4">Therapy Questions</h2>
+          <div className="mb-4">
+            <label className="block text-gray-700">What are your concerns?</label>
+            {therapyQuestions.map((question, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  name="therapyQuestions"
+                  value={question}
+                  onChange={handleChange}
+                  className="mr-2"
+                />
+                <span>{question}</span>
+              </div>
+            ))}
+            {errors.therapyQuestions && (
+              <p className="text-red-500 text-sm">{errors.therapyQuestions}</p>
+            )}
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Therapy Preferences</label>
+            <input
+              type="text"
+              name="therapyPreferences"
+              value={formData.therapyPreferences}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md"
+            />
+            {errors.therapyPreferences && (
+              <p className="text-red-500 text-sm">{errors.therapyPreferences}</p>
+            )}
+          </div>
+        </>
+      )}
+
+      <div className="flex justify-between mt-6">
+        {step > 1 && (
+          <button
+            onClick={handlePrev}
+            className="bg-gray-300 px-4 py-2 hover:bg-gray-400"
+          >
+            Previous
+          </button>
+        )}
+        {step < 3 ? (
+          <button
+            onClick={handleNext}
+            className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600"
+          >
+            Next
+          </button>
+        ) : (
+          <button
+            onClick={() => alert('Form submitted!')}
+            className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+          >
+            Submit
+          </button>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Book;
