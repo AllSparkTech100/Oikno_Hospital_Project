@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function  Book () {
+function Book() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     fullname: '',
@@ -18,6 +18,7 @@ function  Book () {
   const [errors, setErrors] = useState({});
 
   const therapyQuestions = [
+    'Select',
     'Stress Management',
     'Anxiety Reduction',
     'Depression Therapy',
@@ -77,12 +78,17 @@ function  Book () {
 
   const progress = (step / 3) * 100;
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(formData);
+  }
+
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <div className="p-8 container rounded-lg shadow-2xl bg-white/40 w-full">
       <div className="mb-6">
-        <div className="h-2 bg-gray-200 rounded-full">
+        <div className="h-3 lg:h-4 bg-gray-200 rounded-full">
           <div
-            className="h-2 bg-blue-500 rounded-full"
+            className="h-3 lg:h-4 bg-blue-500 rounded-full"
             style={{ width: `${progress}%` }}
           ></div>
         </div>
@@ -93,18 +99,18 @@ function  Book () {
         <>
           <h2 className="text-xl font-bold mb-4">Personal Information</h2>
           <div className="mb-4">
-            <label className="block text-gray-700">Full Name</label>
+            <label className="text-lg font-medium text-gray-700">Full Name</label>
             <input
               type="text"
               name="fullname"
               value={formData.fullname}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Gender</label>
+            <label className="text-lg font-medium text-gray-700">Gender</label>
             <div className="flex items-center space-x-4">
               <label>
                 <input
@@ -130,24 +136,24 @@ function  Book () {
             {errors.gender && <p className="text-red-500 text-sm">{errors.gender}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Phone Number</label>
+            <label className="text-lg font-medium text-gray-700">Phone Number</label>
             <input
               type="text"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
+            <label className="text-lg font-medium text-gray-700">Email</label>
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
@@ -158,46 +164,46 @@ function  Book () {
         <>
           <h2 className="text-xl font-bold mb-4">Address Information</h2>
           <div className="mb-4">
-            <label className="block text-gray-700">Address</label>
+            <label className="text-lg font-medium text-gray-700">Address</label>
             <input
               type="text"
               name="address"
               value={formData.address}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.address && <p className="text-red-500 text-sm">{errors.address}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Country</label>
+            <label className="text-lg font-medium text-gray-700">Country</label>
             <input
               type="text"
               name="country"
               value={formData.country}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.country && <p className="text-red-500 text-sm">{errors.country}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">State</label>
+            <label className="text-lg font-medium text-gray-700">State</label>
             <input
               type="text"
               name="state"
               value={formData.state}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.state && <p className="text-red-500 text-sm">{errors.state}</p>}
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Province</label>
+            <label className="text-lg font-medium text-gray-700">Province</label>
             <input
               type="text"
               name="province"
               value={formData.province}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-black border-2 focus:outline-none focus:border-orange-600"
             />
             {errors.province && <p className="text-red-500 text-sm">{errors.province}</p>}
           </div>
@@ -206,6 +212,7 @@ function  Book () {
 
       {step === 3 && (
         <>
+          <h2 className="text-xl font-bold mb-4">Therapy Questions</h2>
           <h2 className="text-xl font-bold mb-4">Therapy Questions</h2>
           <div className="mb-4">
             <label className="block text-gray-700">What are your concerns?</label>
@@ -245,7 +252,7 @@ function  Book () {
         {step > 1 && (
           <button
             onClick={handlePrev}
-            className="bg-gray-300 px-4 py-2 hover:bg-gray-400"
+            className="bg-gray-300 px-2 py-3 hover:bg-gray-400"
           >
             Previous
           </button>
@@ -253,14 +260,14 @@ function  Book () {
         {step < 3 ? (
           <button
             onClick={handleNext}
-            className="bg-blue-500 text-white px-4 py-2 hover:bg-blue-600"
+            className="bg-blue-500 text-white px-8 py-2 hover:bg-blue-600"
           >
             Next
           </button>
         ) : (
           <button
-            onClick={() => alert('Form submitted!')}
-            className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+            onClick={handleSubmit}
+            className="bg-green-500 text-white px-2 py-3 rounded-md hover:bg-green-600"
           >
             Submit
           </button>
