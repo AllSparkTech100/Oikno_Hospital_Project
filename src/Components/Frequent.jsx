@@ -51,7 +51,7 @@ function Frequent() {
                                         aria-controls="panel1-content"
                                         id="panel1-header"
                                     >
-                                        <Typography component='h5' className="font-semibold">{quest.title} </Typography>
+                                        <Typography component='h3' className="font-semibold">{quest.title} </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         {quest.text}
