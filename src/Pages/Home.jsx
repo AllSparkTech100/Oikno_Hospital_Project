@@ -72,7 +72,7 @@ function Home() {
             </p>
             <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
-                href=""
+                href="https://web.facebook.com/profile.php?id=61556235412055"
                 className="text-white capitalize flex items-center justify-between gap-4"
               >
                 See more Events{" "}
@@ -88,15 +88,15 @@ function Home() {
               src={counsel}
               alt="Counseling Specialist"
               loading="lazy"
-              className="my-5 lg:my-0 aspect-video object-cover h-full w-full rounded-md"
+              className="my-5 lg:my-0 aspect-video lg:aspect-auto object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="hidden lg:block md:hidden">
+          <div className="hidden lg:h-96 lg:block md:hidden">
             <img
               src={doc_img}
               alt="Doctors Image"
               loading="lazy"
-              className="my-5 lg:my-0 h-58 w-full object-cover rounded-md"
+              className="my-5 lg:my-0 h-full w-full object-cover rounded-md"
             />
           </div>
         </div>
@@ -104,8 +104,8 @@ function Home() {
 
       {/* Resources */}
       <section className="mt-40 p-5 lg:p-12">
-        <div className="grid grid-cols-1 items-center lg:flex lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
-          <div className="my-5">
+        <div className="grid grid-cols-1 items-center lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
+          <div className="my-5 lg:order-last">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               highlighted resources
             </h3>
