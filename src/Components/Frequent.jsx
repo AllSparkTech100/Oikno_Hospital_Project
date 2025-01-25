@@ -1,7 +1,6 @@
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import { FaArrowDown } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
@@ -35,8 +34,8 @@ function Frequent() {
                         </h4><p className="my-2 text-lg">
                             your privacy and comfort is our priority!!
                         </p>
-                        <button className="mt-3 items-center justify-center p-3 lg:p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 flex-row rounded-lg text-white">
-                            <span><IoCall size={30} /></span>
+                        <button className="mt-3 items-center justify-center p-2 lg:p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 rounded-lg text-white">
+                            <span><IoCall size={25} /></span>
                             <a href="tel:+2348149944531">+2348149944531</a>
                         </button>
                     </div>
@@ -51,7 +50,7 @@ function Frequent() {
                                         aria-controls="panel1-content"
                                         id="panel1-header"
                                     >
-                                        <Typography component='h3' className="font-semibold">{quest.title} </Typography>
+                                        <div className='font-bold capitalize' >{quest.title} </div>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         {quest.text}
