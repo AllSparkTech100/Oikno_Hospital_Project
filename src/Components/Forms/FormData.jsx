@@ -36,7 +36,7 @@ function FormData() {
     return (
         <>
 
-            <form method="" action="" onSubmit={handleSubmit} >
+            <form onSubmit={handleSubmit} >
                 {/* FullName */}
                 <div className="mb-3 flex gap-3 flex-col mt-3">
                     <label className="font-semibold" htmlFor="name">Full Name</label>

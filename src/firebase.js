@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCdGmkaV-oF7QiCwMk1tgNdGsZmSVHldw",
-  authDomain: "oikno-mhs-test-form.firebaseapp.com",
-  projectId: "oikno-mhs-test-form",
-  storageBucket: "oikno-mhs-test-form.firebaseapp.com",
-  messagingSenderId: "1060980048891",
-  appId: "1:1060980048891:web:628f1d0732a552cd034e4e",
+    apiKey: import.meta.env.VITE_REACT_APP_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase app
