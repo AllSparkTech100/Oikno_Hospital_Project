@@ -1,5 +1,4 @@
-// import { abuja } from '/bgvideo.mp4';
-// import { abuja } from '../lib/Vids.jsx';
+
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
