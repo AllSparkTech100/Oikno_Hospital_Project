@@ -1,6 +1,7 @@
 import { LuSend } from "react-icons/lu";
 import { useState } from "react";
 import { db } from "../../firebase"
+import { collection, addDoc } from "firebase/firestore";
 
 function FormData() {
     const [name, setName] = useState('');
@@ -8,24 +9,28 @@ function FormData() {
     const [number, setNumber] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        db.collection('FormData').add({
-            name: name,
-            email: email,
-            message: message,
-        })
-            .then(() => {
-                alert('message sent');
-            })
-            .catch(error => {
-                alert(error.message);
+        try {
+            // Use the collection and addDoc functions for Firestore
+            await addDoc(collection(db, "FormData"), {
+                name: name,
+                email: email,
+                number: number,
+                message: message,
             });
+            alert("Message sent");
 
-        setName('');
-        setEmail('');
-        setMessage('');
+            // Clear the form fields
+
+        } catch (error) {
+            alert(error.message);
+        }
+        setName("");
+        setEmail("");
+        setNumber("");
+        setMessage("");
     }
 
     return (
