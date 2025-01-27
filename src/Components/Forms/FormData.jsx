@@ -1,17 +1,37 @@
 import { LuSend } from "react-icons/lu";
 import { useState } from "react";
-
+import { db } from "../../firebase"
 
 function FormData() {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [number, setNumber] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [number, setNumber] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        db.collection('FormData').add({
+            name: name,
+            email: email,
+            message: message,
+        })
+            .then(() => {
+                alert('message sent');
+            })
+            .catch(error => {
+                alert(error.message);
+            });
+
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
 
     return (
         <>
 
-            <form method="" action="" >
+            <form method="" action="" onSubmit={handleSubmit} >
                 {/* FullName */}
                 <div className="mb-3 flex gap-3 flex-col mt-3">
                     <label className="font-semibold" htmlFor="name">Full Name</label>
@@ -38,7 +58,7 @@ function FormData() {
 
                 <button className="w-full flex items-center justify-center lg:mt-4 mt-7 rounded-md p-2 bg-slate-800 text-white text-center cursor:pointer" >
                     <span className="text-white mr-2"><LuSend size={25} /></span> Submit
-        </button >
+                </button >
             </form >
         </>
     );
