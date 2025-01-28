@@ -8,7 +8,7 @@ function Videos() {
     const videoSet = [
         {
             title: "Abuja Therapy",
-            video: "/bgvideo.mp4",
+            video: "/abuja.mp4",
             text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore impedit voluptatibus totam in sapiente, quod distinctio quam itaque blanditiis veniam soluta nihil necessitatibus voluptas repellendus quia alias? Repellat, quod facere."
         },
         {
@@ -29,7 +29,7 @@ function Videos() {
                                     <CardActionArea>
                                         <CardMedia
                                             alt={items.title} >
-                                            <video className='w-full' src={items.video} controls muted preload='none'></video>
+                                            <video width="420" height="240" src={items.video} controls muted preload='none'></video>
                                         </CardMedia>
                                         <CardContent className='p-3' >
                                             <Typography className='font-semibold' gutterBottom >
