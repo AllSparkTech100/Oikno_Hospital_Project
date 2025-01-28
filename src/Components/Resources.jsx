@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Gallery from './Gallery';
 import Videos from './Videos';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
@@ -57,7 +58,7 @@ export default function BasicTabs() {
         <Videos />
       </Resources>
       <Resources value={value} index={2}>
-        Item Three
+       <Gallery/>
       </Resources>
     </Box>
   );
