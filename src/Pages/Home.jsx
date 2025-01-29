@@ -21,7 +21,7 @@ function Home() {
             <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white"> mental health, <br />is preserved wealth</h1>
             <div className="flex items-center mt-3 gap-5">
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
-                <a href="http://" className=" text-white uppercase font-semibold ">Join Us</a>
+                <a href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='blank' className=" text-white uppercase font-semibold ">Join Us</a>
               </button>
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
                 <a href="http://" className=" text-white uppercase font-semibold ">Learn More</a>
