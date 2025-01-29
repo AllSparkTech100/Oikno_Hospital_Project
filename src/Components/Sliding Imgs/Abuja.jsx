@@ -1,10 +1,10 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { useState } from "react";
+// import { useState } from "react";
 
 
 function Abuja() {
-    const [loadedImages, setLoadedImages] = useState(new Array(images.length).fill(false));
+    // const [loadedImages, setLoadedImages] = useState(new Array(images.length).fill(false));
 
     const images = [
         { src: "/Abjt/aj1.jpg" },
@@ -39,46 +39,45 @@ function Abuja() {
         { src: "/Abjt/aj30.jpg" },
     ];
 
-    const handleImageLoad = (index) => {
-        setLoadedImages((prev) => {
-          const newLoaded = [...prev];
-          newLoaded[index] = true;
-          return newLoaded;
-        });
-      };
+    // const handleImageLoad = (index) => {
+    //     setLoadedImages((prev) => {
+    //         const newLoaded = [...prev];
+    //         newLoaded[index] = true;
+    //         return newLoaded;
+    //     });
+    // };
 
     return (
         <div className="w-full mx-auto py-10">
-          <Splide
-        options={{
-          type: "loop",
-          perPage: 1,
-          autoplay: true,
-          interval: 3000,
-          arrows: true,
-          pagination: true,
-        }}
-      >
-        {images.map((image, index) => (
-          <SplideSlide key={index}>
-            <div className="relative w-full h-64 md:h-80">
-              {!loadedImages[index] && (
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-200 animate-pulse">
-                  <span className="text-gray-500">Loading...</span>
-                </div>
-              )}
-              <img
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className={`w-full h-full object-cover transition-opacity duration-500 ${
-                  loadedImages[index] ? "opacity-100" : "opacity-0"
-                }`}
-                onLoad={() => handleImageLoad(index)}
-              />
-            </div>
-          </SplideSlide>
-        ))}
-      </Splide>
+
+            <Splide
+                options={{
+                    type: "loop",
+                    perPage: 3,
+                    gap: "1rem",
+                    autoplay: true,
+                    interval: 3000,
+                    pagination: false,
+                    breakpoints: {
+                        1024: { perPage: 2 },
+                        640: { perPage: 1 },
+                    },
+                }}
+            // aria-label="Gallery Slider"
+            >
+                {images.map((image) => (
+                    <SplideSlide key={image.id}>
+                        <div className="relative overflow-hidden rounded-lg shadow-md">
+                            <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="w-full h-64 lg:h-72 object-cover"
+                            />
+                        </div>
+                    </SplideSlide>
+                ))}
+            </Splide>
+
             <h4 className="capitalize text-lg my-7 text-center font-bold">
                 Abuja art Therapy
             </h4>
