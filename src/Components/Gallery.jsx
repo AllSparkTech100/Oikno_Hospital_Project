@@ -4,7 +4,7 @@ import Abuja from "./Sliding Imgs/Abuja"
 function Gallery() {
 
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <Abuja />
     </div>
   )
