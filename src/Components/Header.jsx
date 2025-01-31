@@ -13,7 +13,7 @@ function Header() {
       <header className="sticky top-0 z-10 bg-[#e6e6e6] text-white">
         <div className="flex gap-5 justify-between items-center p-4 lg:p-2">
 
-          <img href='/' src="/mhslogo.png" alt="Logo" className="w-15 h-10 lg:ml-4" />
+          <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
 
           <div className="mx-auto text-black ">
             <nav

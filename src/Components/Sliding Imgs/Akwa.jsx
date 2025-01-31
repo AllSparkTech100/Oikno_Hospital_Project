@@ -1,25 +1,29 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-function PHC() {
+function Akwa() {
     const images = [
-        { src: "/pha/ph1.webp" },
-        { src: "/pha/ph2.webp" },
-        { src: "/pha/ph3.webp" },
-        { src: "/pha/ph4.webp" },
-        { src: "/pha/ph5.webp" },
-        { src: "/pha/ph6.webp" },
-        { src: "/pha/ph7.webp" },
-        { src: "/pha/ph8.webp" },
-        { src: "/pha/ph9.webp" },
-        { src: "/pha/ph10.webp" },
-        { src: "/pha/ph11.webp" },
-        { src: "/pha/ph12.webp" },
-        { src: "/pha/ph13.webp" },
-        { src: "/pha/ph14.webp" },
-        { src: "/pha/ph15.webp" },
+        { src: "/akw/ak1.webp" },
+        { src: "/akw/ak2.webp" },
+        { src: "/akw/ak3.webp" },
+        { src: "/akw/ak4.webp" },
+        { src: "/akw/ak5.webp" },
+        { src: "/akw/ak6.webp" },
+        { src: "/akw/ak7.webp" },
+        { src: "/akw/ak8.webp" },
+        { src: "/akw/ak9.webp" },
+        { src: "/akw/ak10.webp" },
+        { src: "/akw/ak11.webp" },
+        { src: "/akw/ak12.webp" },
+        { src: "/akw/ak13.webp" },
+        { src: "/akw/ak14.webp" },
+        { src: "/akw/ak15.webp" },
+        { src: "/akw/ak16.webp" },
+        { src: "/akw/ak17.webp" },
+        { src: "/akw/ak18.webp" },
+        { src: "/akw/ak19.webp" },
+        { src: "/akw/ak20.webp" },
     ];
-
     return (
         <div className="w-full mx-auto py-10">
             <Splide
@@ -51,10 +55,10 @@ function PHC() {
             </Splide>
 
             <h4 className="capitalize text-lg my-7 text-center font-bold">
-                port-harcourt art Therapy
+               akwa-ibom Therapy
             </h4>
         </div>
     )
 }
 
-export default PHC
+export default Akwa
